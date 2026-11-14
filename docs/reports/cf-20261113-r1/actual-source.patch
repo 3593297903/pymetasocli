@@ -1,0 +1,185 @@
+--- before/src/metasocli_py/application/story.py
++++ after/src/metasocli_py/application/story.py
+@@ -33,7 +33,11 @@
+     file = project_path(root, MANIFEST)
+     if not file.exists():
+         raise AppError('NOT_INITIALIZED', 'No metasocli-py.yaml at the explicit story root.')
+-    story = parse(Manifest, loads(read_stable(file), yaml_input=True))
++    return validate_story_bytes(read_stable(file))
++
++
++def validate_story_bytes(raw: bytes) -> dict:
++    story = parse(Manifest, loads(raw, yaml_input=True))
+     for field, key in [('episodes', 'id'), ('assets', 'recipe')]:
+         ids = [item[key]['assetId'] if key == 'recipe' else item[key] for item in story[field]]
+         if len(ids) != len(set(ids)):
+--- before/src/metasocli_py/images/proof_cache.py
++++ after/src/metasocli_py/images/proof_cache.py
+@@ -0,0 +1,58 @@
++"""Experimental per-run verification cache keyed by exact current bytes.
++
++Every lookup still uses the original stable-file reader. No mtime-only shortcut,
++no cached mutable quota ledger, and no cache surviving the Quota instance.
++"""
++import copy
++from collections import OrderedDict
++
++from ..application.story import MANIFEST, STATE, validate_story_bytes
++from ..contracts.records import validate_record
++from ..domain.errors import AppError
++from ..persistence.codec import loads, verify
++from ..persistence.files import project_path, read_stable
++from .contracts import ImagePlan, ImageRun
++
++
++class PreparedProofCache:
++    def __init__(self, max_entries=4, max_bytes=8*1024*1024):
++        self.entries = OrderedDict()
++        self.max_entries, self.max_bytes = max_entries, max_bytes
++        self.total_bytes = 0
++        self.hits = self.misses = 0
++
++    def _get(self, path, validator):
++        raw = read_stable(path)
++        key = str(path)
++        previous = self.entries.get(key)
++        if previous is not None and previous[0] == raw:
++            self.hits += 1
++            self.entries.move_to_end(key)
++            return previous[1]
++        self.misses += 1
++        if previous is not None:
++            self.total_bytes -= len(previous[0])
++            del self.entries[key]
++        value = validator(raw)
++        if len(raw) <= self.max_bytes:
++            while self.entries and (len(self.entries) >= self.max_entries or self.total_bytes+len(raw) > self.max_bytes):
++                _, (removed, _) = self.entries.popitem(last=False)
++                self.total_bytes -= len(removed)
++            self.entries[key] = (raw, value)
++            self.total_bytes += len(raw)
++        return value
++
++    def plan(self, root, plan_id):
++        path = project_path(root, f'{STATE}/image-plans/{plan_id}.json')
++        def validated(raw):
++            plan = verify(loads(raw), 'planHash')
++            validate_record(ImagePlan, plan)
++            return plan
++        plan = self._get(path, validated)
++        story = self._get(project_path(root, MANIFEST), validate_story_bytes)
++        if plan['planId'] != plan_id or plan['projectId'] != story['projectId']:
++            raise AppError('IMAGE_PLAN_IDENTITY', 'Image plan belongs to another story.')
++        return copy.deepcopy(plan)
++
++    def run(self, path):
++        return copy.deepcopy(self._get(path, lambda raw: validate_record(ImageRun, verify(loads(raw)))))
+--- before/src/metasocli_py/images/workflow.py
++++ after/src/metasocli_py/images/workflow.py
+@@ -353,13 +353,15 @@
+     return digest({k: run[k] for k in ('planId', 'planHash', 'authorizedAt', 'runtimeRoot', 'items')})
+ 
+ 
+-def prepared_proof(root: Path, job: dict, runtime: Path) -> dict:
++def prepared_proof(root: Path, job: dict, runtime: Path, cache=None) -> dict:
+     """Positive persisted protocol proof, not an inference from missing receipts."""
+-    saved = load_image_job(root, job['operationId'])
++    plans = {job['planId']: cache.plan(root, job['planId'])} if cache is not None else None
++    saved = load_image_job(root, job['operationId'], plans)
+     if not unsent_prepared(saved) or any(saved.get(k) != job.get(k) for k in (
+         'operationId', 'projectId', 'planId', 'planHash', 'requestHash', 'inputHash', 'authorizationHash')):
+         raise AppError('IMAGE_PREPARED_IDENTITY', 'Prepared operation identity or protocol differs.')
+-    run = validate_record(ImageRun, verify(read_json(project_path(root, f'{STATE}/image-runs/{job["planId"]}.json'))))
++    runpath = project_path(root, f'{STATE}/image-runs/{job["planId"]}.json')
++    run = cache.run(runpath) if cache is not None else validate_record(ImageRun, verify(read_json(runpath)))
+     if (run['planId'] != job['planId'] or run['planHash'] != job['planHash']
+         or run['runtimeRoot'] != str(runtime.absolute()).casefold()
+         or run['items'].get(job['assetId']) != job['operationId']
+@@ -378,6 +380,8 @@
+         self.runtime = runtime
+         self.owner = str(project_path(root, f'{STATE}/submission.lock'))
+         self.diagnostics: list[dict] = []
++        from .proof_cache import PreparedProofCache
++        self.proof_cache = PreparedProofCache()
+ 
+     def read(self) -> dict:
+         path, marker = self.folder / 'ledger.json', self.folder / 'owner.json'
+@@ -441,11 +445,18 @@
+                 continue
+ 
+     def update(self, job: dict, *, reserve: bool = False) -> bool:
++        accepted = self._update_once(job, reserve=reserve)
++        if accepted or not reserve:
++            return accepted
++        # Reconcile only after an actual quota obstruction, outside the ledger lock.
++        self.repair_prepared()
++        return self._update_once(job, reserve=True)
++
++    def _update_once(self, job: dict, *, reserve: bool = False) -> bool:
+         if reserve:
+-            prepared_proof(Path(self.root), job, self.runtime)
++            prepared_proof(Path(self.root), job, self.runtime, self.proof_cache)
+             if not is_locked(Path(self.owner)):
+                 raise AppError('IMAGE_QUOTA_OWNER', 'Admission requires the story submission lease.')
+-            self.repair_prepared()
+         with lock(self.folder / 'ledger.lock'):
+             data = self.read()
+             for operation, existing in data['jobs'].items():
+@@ -463,7 +474,8 @@
+                         return True
+                 held = [j for j in data['jobs'].values() if self.held(j)]
+                 recent = [j for j in data['jobs'].values() if time.time() - j.get('admittedEpoch', j.get('sentEpoch', 0)) < 60]
+-                known = [limits, *[j.get('limits', {}) for j in data['jobs'].values() if j in held or j in recent]]
++                relevant_ids = {j['operationId'] for j in held} | {j['operationId'] for j in recent}
++                known = [limits, *[j.get('limits', {}) for j in data['jobs'].values() if j['operationId'] in relevant_ids]]
+                 concurrent = min((v['concurrent'] for v in known if v.get('concurrent')), default=float('inf'))
+                 rpm = min((v['rpm'] for v in known if v.get('rpm')), default=float('inf'))
+                 if len(held) >= concurrent or len(recent) + (0 if previous in recent else 1) > rpm:
+@@ -497,7 +509,7 @@
+             return True
+ 
+     def start_submission(self, job: dict) -> None:
+-        prepared_proof(Path(self.root), job, self.runtime)
++        prepared_proof(Path(self.root), job, self.runtime, self.proof_cache)
+         with lock(self.folder / 'ledger.lock'):
+             data = self.read()
+             slot = data['jobs'].get(job['operationId'])
+--- before/src/metasocli_py/video/execution.py
++++ after/src/metasocli_py/video/execution.py
+@@ -284,12 +284,16 @@
+ 
+ async def observe_history(root: Path, job: dict, capacity: Capacity, provider: Metaso,
+                           queries: asyncio.Semaphore, options: ExecutionOptions, changed: asyncio.Event,
+-                          pending: list) -> None:
++                          pending: list, deadline_state: list[float]) -> None:
+     try:
+         with lock(capacity.root / 'owners' / f'{job["operationId"]}.lock', timeout=0):
+-            deadline = time.monotonic() + options.capacity_wait
++            if not deadline_state:
++                deadline_state.append(time.monotonic() + options.capacity_wait)
++            deadline = deadline_state[0]
+             for index in range(options.max_polls):
+-                if not pending:
++                # Capacity budget governs additional rounds, not cancellation of accepted GETs.
++                if (not pending or options.capacity_wait <= 0
++                        or (index > 0 and time.monotonic() >= deadline)):
+                     return
+                 state = await observe_once(root, job, capacity, provider, queries, options, changed)
+                 if state not in ('queued', 'running') or index + 1 == options.max_polls:
+@@ -431,6 +435,7 @@
+         for item, job in existing:
+             tasks.add(asyncio.create_task(execute_job(root, plan, item, job, capacity, provider, downloads, options, changed, queries=queries)))
+         observers = set()
++        history_deadline: list[float] = []
+         observed_operations: set[str] = set()
+         if pending:
+             excluded = {j['operationId'] for _, j in existing} | {j['operationId'] for _, _, j in pending if j}
+@@ -442,7 +447,7 @@
+             for job in capacity.observation_candidates(root, plan['projectId'], excluded):
+                 reconcile_create(root, job)
+                 observed_operations.add(job['operationId'])
+-                observers.add(asyncio.create_task(observe_history(root, job, capacity, provider, queries, options, changed, pending)))
++                observers.add(asyncio.create_task(observe_history(root, job, capacity, provider, queries, options, changed, pending, history_deadline)))
+         wait_start = time.monotonic()
+         blocker = None
+         # Validate the entire unsubmitted scope before the first new paid action.

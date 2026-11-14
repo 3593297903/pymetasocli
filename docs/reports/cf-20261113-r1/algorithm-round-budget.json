@@ -1,0 +1,11 @@
+{
+  "capacityWait": 0.15,
+  "queryDelay": 1.2,
+  "elapsedSeconds": 1.9778995999949984,
+  "historicalGets": 4,
+  "additionalRounds": 0,
+  "newPosts": 0,
+  "held": 4,
+  "allRunningReceiptsPersisted": true,
+  "hardTotalDeadline": false
+}

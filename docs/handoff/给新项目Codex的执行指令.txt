@@ -1,0 +1,162 @@
+请实际实现一个以 Python 为主要语言的独立 metasocli 新项目，按下面的完整范围持续完成源码、打包、Skill、离线测试和交付。不要只给建议、骨架或实现计划。不要在旧项目原地重写，也不要做 Python 调用旧 Node CLI 的外壳。
+
+本次仅授权开发、安装必要开发依赖、构建、离线测试和在新项目目录中创建新命名 Skill。可以在新仓库做本地检查点提交，分支使用 codex/ 前缀；不推送 GitHub、不发布包、不修改已有项目、业务故事、凭据、代理配置或旧 Skill，不发起任何真实付费图片、视频、独立 IR 请求。测试只能使用合成数据和本机假服务，不需要我提供真实 Key。不要关闭安全机制或尝试绕过宿主审批。
+
+一、先确定目录与依据
+
+1. 本次用户新建的、真实可写的项目目录为 PY_ROOT；没有明确目录时使用 E:\metasocli-py。若当前目录是 E:\metasocli、E:\libcli、已有业务故事、链接目录或其他项目，不在其中初始化；改用全新的独立目录。保留已有用户文件，不做强制删除或重置。
+2. 旧参考项目只读：E:\metasocli。
+   基线版本：0.2.0。
+   固定提交：f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c。
+   参考远端：https://github.com/3593297903/metasocli.git。
+   远端仅作来源核验，不把新项目的 origin 自动设成旧项目，不向旧仓库提交 Python 实现。
+3. 先完整读取：
+   E:\metasocli\.work\python-rebuild-plan-20261113\Python独立重建完整方案.md
+   E:\metasocli\.work\python-rebuild-plan-20261113\semantic-probe.json
+   E:\metasocli\AGENTS.md
+   E:\metasocli\START_HERE.md
+   E:\metasocli\README.md
+   E:\metasocli\docs\ARCHITECTURE.md
+   E:\metasocli\docs\SOURCE_BASELINE.md
+   E:\metasocli\docs\IMAGE_API_USAGE.md
+   E:\metasocli\docs\VIDEO_EXECUTE.md
+   E:\metasocli\docs\VIDEO_CAPACITY_POLICY.md
+   E:\metasocli\docs\IMAGE_EXECUTION_AUTHORIZATION.md
+   然后完整阅读与下述迁移范围有关的 contracts、core、assets、images、jobs、metaso、storage、skills 和测试。先用 rg --files 定位真实文件，不根据本文的示意模块名猜接口。
+4. 旧 AGENTS 中的 Node 技术约束属于旧项目；新项目按本指令采用 Python，并建立自己的 AGENTS.md。旧项目只读、保密和不重复付费等边界仍保留。旧本机授权文件不是新项目的付费授权，不读取/复制旧 Key、旧本机授权原文或生产账本。
+5. 核对固定提交与当前工作树。若旧源码已变化，从 Git 只读提取固定提交所需的源码、模板、测试到 PY_ROOT/.baseline；不要在旧目录 checkout/build/test，不用会写旧 .git 的 worktree，也不复制整个旧仓库、node_modules、.git、真实素材或运行记录。
+6. 建立来源清单：源路径、固定提交、文件 SHA-256、目标路径、保留/改写理由。对照当前 CLI 帮助、契约、错误码、状态机和约55个测试文件建立功能矩阵；以实读结果为准，不把测试数量当成功标准。
+
+二、固定新身份
+
+- 包与 CLI：metasocli-py。
+- import：metasocli_py；支持 python -m metasocli_py。
+- 版本：开发期 0.1.0a1，所有必做离线验收完成后改为 0.1.0；不要冒充原 TypeScript 0.2.0。
+- 故事清单：metasocli-py.yaml；状态目录：.metasocli-py；安装 owner：metasocli-py。
+- 默认用户配置：当前用户/.metasocli-py；默认运行目录：当前用户/.metasocli-py-runtime。
+- 独立环境变量：METASOCLI_PY_METASO_API_KEY、METASOCLI_PY_IMAGE_API_KEY。
+- 测试覆盖目录：METASOCLI_PY_CONFIG_DIR、METASOCLI_PY_RUNTIME_DIR；只指向本次隔离测试根。
+- 不自动兼容读取旧凭据变量，不共用旧账本/配置目录，不依赖启动 cwd 或固定 E 盘路径定位包内资源。
+- 新旧程序若使用同一平台账号，两套账本不能自动共享四并发上限；部署文档明确同账号正式切换时只启用一个提交引擎。不同 Key 也可能属于同账号配额。
+
+三、实现技术与结构
+
+1. 标准 CPython >=3.13,<3.15；优先复用可实际运行的3.14，记录路径、架构、补丁版本。用 uv、项目 .venv、pyproject.toml、uv.lock、Hatchling 构建 wheel，不要求生产安装 Node/npm。
+2. 核实稳定依赖后生成真实 uv.lock；后续用 uv sync --locked --link-mode copy，不用 --frozen 掩盖项目/锁文件不一致，不用最新浮动依赖掩盖测试失败。
+3. CLI 用 argparse，契约用 Pydantic 2.x 严格模式及 extra forbid，网络用 HTTPX AsyncClient，并发用 asyncio，YAML 用受限 PyYAML SafeLoader，图片技术校验用 Pillow，跨进程锁用 portalocker，结构化哈希用 rfc8785 和 SHA-256。
+4. Windows 凭据用 ctypes 调 DPAPI；其他平台先支持独立环境变量。不需要常驻 Web 服务，只有短时本机凭据表单。不要引入数据库、分布式队列、Web UI、通用插件系统或后台 Worker。
+5. src/metasocli_py 下按 contracts、domain、application、images、video、providers、persistence、media、credentials、telemetry、resources 划分。domain 不依赖网络/CLI；provider 不直接修改故事；application 编排明确的仓储、文件、时钟和供应商接口。
+6. 把旧 Python 校验器及去噪 helper 单向复制、适配成可复用模块，在同一进程调用；保留可选独立校验命令。正常运行不能 import/exec 旧目录文件，不能 subprocess Node CLI。
+7. 模板、Skill 正文、去噪文本打入 wheel，用 importlib.resources 访问；图片/视频本身不打包进源码。记录 source/dest SHA 并验证去噪原文未改。
+
+四、跨语言正确性先解决
+
+1. 原文和 narration cues 的 start/end 是 UTF-16 code unit。实现明确的 utf16 length/slice/boundary/offset-map；新 draft 标注 offsetEncoding=utf16。不能直接用 Python len/切片解释旧偏移；不能切开 surrogate pair。
+2. 保留原始文本语义：仅移除开头 BOM、规范 CRLF/CR；不自动 strip 空白或结尾换行，不做 Unicode 正规化。H3 7000限制按 Unicode 码点，严格拒绝非法 Unicode。
+3. 旧 canonical.ts 的 localeCompare('en') + JSON.stringify 不等于 Python sort_keys，也不等于 JCS。新记录使用 hashVersion=jcs-sha256-v1 和经测试的 RFC8785库；旧结构化哈希不原样接管、不重写旧记录。数组顺序固定，排除契约规定的自哈希字段，NaN/Infinity拒绝，taskId保持字符串。
+4. 文件和完整正文按实际字节 SHA-256。用独立字段区分缺失、null、false、0；禁止把 bool当int、字符串时长强制转数字。限制整数可表示范围，超过范围的纳秒/标识字段使用明确字符串。
+5. YAML/JSON拒绝重复字段；YAML拒绝anchor/alias和非预期隐式类型；输入大小有上限。UTC时间用于记录，monotonic用于超时预算。
+6. 差分测试比较发送 payload、文本、媒体字节和引用顺序。只对明确的新命名空间、随机ID、时间和版本化哈希做专门映射，不笼统忽略所有差异。保留差异清单。
+
+五、保留本地业务和三个快捷入口
+
+1. 保留剧本与成品视频提示词两入口、原文追溯、分段连续、有序引用、旁白归属、配方依赖校验和正式素材登记。
+2. 同 ID 换图：assets register --id 原ID --file 新图片，一次 CLI 调用完成读图、校验、原子保存、更新选中 media 和回执后立即返回。其他资产、提示词、分段引用顺序、配方和图库不改；新计划用新图，旧已受理任务不回写输入。
+3. 同 ID 换稿：prompts replace --episode 原集ID --segment 原段ID --file 完整正文，一次调用完成校验和事务后返回。时长、资产、引用顺序、其他段正文不变；维护必要 UTF-16 偏移。旁白仅在能唯一可靠重定位时更新，有歧义返回明确错误，不能猜。
+4. 不为纯换图或换稿重新导入全剧、重建图库、生成素材、触碰生产容量账本或多次等待 Codex 决策。
+5. 视频 video run 一次启动完成范围捕获、准备、生成、轮询、下载、delivery；不改成让 Codex 再分步调用大量命令。保留旧单任务、batch和恢复入口。
+6. 变更后的素材/正文必须让尚未提交的旧快照失效，已经受理的任务仍按旧 taskId 恢复；不要在准备到提交之间偷偷换输入。
+
+六、图片模块完整移植
+
+1. 保持 images prepare / plan / run / collect 职责及正式恢复入口；准备与collect不付费。默认集中准备本次全部配方和导入，用all-ready逐项提交，有依赖的图完成登记后立即解锁后续图。
+2. 沿用 https://api.yiciyuang.com：无参考图用 /v1/images/generations JSON；有参考图用 /v1/images/edits multipart。单图字段image，多图重复image[]；验证真实发出的字段、文件字节、名称、MIME，不用普通dict丢失重复字段。
+3. 保留基线实际默认：gpt-image-2.5、n=1、quality=medium、response_format=url，兼容b64_json；人物/场景/道具1920x1088，首帧1088x1920；保留显式profile尺寸与参数校验。
+4. 人物/场景/道具去噪原文分别按类型在完整提示词结尾只加一次；发生在配方哈希之前。保留普通和tk不同图片组织方式，旁白入口不污染普通入口。
+5. 基线当前图片总等待默认600秒，显式总等待最长1200秒，并支持exact=300秒。不要套用历史聊天里的旧默认；不得ms/秒混用。HTTPX分项等待加覆盖发送和响应接收的总deadline，不能默认5秒或底层提前300秒结束。
+6. all-ready不偷偷改为两并发或逐集排队。尊重已知供应商限制；图片连接池显式设置，避免缺省100连接改变集中派发。数量较大先做内存/磁盘/句柄预检，缺资源在POST前报告，不边付费边偷偷改策略。
+7. 流式写完整响应到临时文件，完整性证明和fsync后解析；保留HTTP状态、脱敏错误、原始响应哈希。URL下载或Base64解码后验证实际图片，逐项正式登记；下载并发2、解码/验证2、登记1，不能200个大响应同时完整常驻内存。
+8. 每项保存operationId、requestHash、输入/输出文件哈希和回执关联；不能按返回顺序、文件名猜归属。一项失败不得无差别取消其他已发付费请求。
+9. 无自动POST重试；未知不能当失败重发。先恢复完整响应/原URL；下载失败不重新生成；用户明确授权的正式一次重试保留旧证据。其他故事未知不构成全局无条件阻塞。
+
+七、视频、R3容量和恢复完整移植
+
+1. 主路径h3-inline-ir，MiniMax-H3，真实请求显式context_ir_enabled=true；保留当前Metaso地址、创建/查询契约、768P/9:16/水印false默认、9图/1旁白/首帧互斥/7000字符/64MiB限制。时长4–15秒，小数向上适配；不改原文目标时长记录。
+2. video run捕获当前选段/提示词/素材/顺序→准备冻结计划→授权范围持久化→R3核查及派发→四并发→taskId轮询→下载验证→交付。创建默认120秒，单次查询30秒，轮询60次/5秒；查询预算耗尽不是远端取消。
+3. 提交前先持久化意图；taskId返回后尽早保存完整创建回执。四个创建允许并行在途；可信终态出现就按顺序补位，不等下载或等其他三个结束。下载并发2，按原技术校验、重定向和大小上限处理，失败只恢复下载。
+4. 本次新生成不得标为启动前reused；全复用、部分复用、新生成及中断恢复的delivery身份各自准确。
+5. 自己的新运行账本保留R3业务规则：
+   - 无taskId且创建已结束/owner已退出：释放本地容量，保留旧unknown。
+   - owner确实仍在创建或保存回执：保留容量。
+   - 实际GET失败/超时/身份无法确认或来源证据失效：按R3释放，保留ID与证据。
+   - 明确queued/running且只因本地停止/轮询预算结束：保留容量。
+   - 匹配的可信终态：释放，迟到running不能复活。
+   - 更新且匹配的活跃证据：恢复占位；超过4只停止新增，不删真实任务。
+6. 移植终态事件、观察issued/applied水位、迟到回执ID修复、lastRelease/lastRestore、幂等应用与身份核对；不能只抄状态名丢掉已修复竞态。
+7. 派发票据让先进入且仍有待提交段的批次优先补位；每批次明确限制1–4时真实余位可给其他故事；待提交清空即让出，不占着等下载。暂停/退出后按现行规则重排，status/doctor不做容量清理。
+8. 同故事图片/视频提交互斥、不同故事隔离，但真实账号容量与损坏账本不能被绕过。释放本地占位不等于远端取消，不保证远端绝对四并发。
+9. 新尝试保留retryOf、旧未知和一次授权；不要求不存在的taskId作为显式授权新生成的前提，也不从旧批次授权推导无限重试。构造新plan/run不能绕过旧未知。
+10. 独立context-ir兼容支路在主路径之后实现并离线验证；默认不运行独立IR或增加一次收费调用。没有做完不能宣称完整覆盖旧能力。
+
+八、文件、锁与网络基础不可简化掉
+
+1. 短事务锁与操作/调度lease分开；共享Story/账本写锁内不等待HTTP、图片解码或用户输入。稳定锁文件不得在正常release时删除/替换；锁元数据不能替代OS实际持锁判断。
+2. 尽量不嵌套跨域锁，必要时固定runtime→story顺序；story事件提交后释放锁再应用runtime事件，不能反向拿锁。加入CAS/版本检查防锁外旧读覆盖新内容。
+3. 原子文件写临时文件、fsync、os.replace；Windows短暂拒绝有界重试，不先删除旧目标。保证多文件事务崩溃恢复有日志，不能宣称单文件replace就解决整组事务。
+4. 实测Windows junction/reparse/hardlink/ADS/UNC、大小写与文件身份变化，防路径越界和TOCTOU。只有导入命令明确允许的只读外部素材可单向复制。
+5. 每类Provider配置direct/proxy/environment；默认direct在HTTP层trust_env=False，不修改系统代理、不宣称绕过TUN。API创建关闭自动重定向与自动重试；TLS验证开启。媒体下载不用API认证头，签名URL不得完整打日志。
+6. async任务一项失败要转成该项结果；不能让TaskGroup异常自动取消其他已提交任务。Ctrl+C停止新增，保存已知回执与未知状态，有界退出；不能无限shield。to_thread取消不会停线程，关闭和恢复要设计验证。
+7. 日志仅白名单摘要，默认ValidationError不可泄露输入、图片Base64、Key或完整素材签名链接。大输入/响应不回传给Codex，完整无密钥证据放项目状态文件。
+
+九、Skill、配置和迁移
+
+1. 六个新项目入口：metasocli-py、metasocli-py-video-prompts、metasocli-py-video-prompts-旁白、metasoclitk-py、metasocli-py-prompt-engine、metasocli-py-reference-images。
+2. 三个成品Skill均优先走同一换图/换稿/video run固定入口，用户目标已明确就沿用相同ID和范围，不重复准备所有内容。正常运行使用实际.venv Python或安装后的CLI，不每次运行uv sync。
+3. 提供三个新名字的用户级入口安装器/指令，先在临时用户目录验证发现、引用和回滚；不得覆盖当前设备旧入口。实际全局安装仅在用户要求启用新项目时按宿主规则执行，报告未实见选择器不能宣称已显示。
+4. auth connect / images auth-connect仅短时localhost表单，随机token、有效期、Host/Origin/请求大小限制；加密并回读后原子替换，失败保留旧值，保留密文备份。测试用假token，不读取原项目或用户环境里的真实Key。
+5. status区分本地配置/解密、远端认证、真实生成，不把configured当作余额或成功证明。旁白音频缺失报告待配置，不从旧项目自动复制。
+6. 新故事为默认；提供只读legacy inspect与显式legacy import-content，只从静止且无活跃/unknown任务的旧故事单向复制内容和校验过的媒体到全新故事。新projectId，保留集/段/资产ID及来源映射；不原地迁移，不接管活跃任务，不复制旧运行账本。真实旧故事不用于本次测试。
+
+十、分阶段实际完成，先离线后真实
+
+P0：来源清单、CLI/功能矩阵、业务契约、源测试映射、合成基准样例。
+P1：可安装包、严格契约、UTF-16、JCS、文件路径/锁/原子性、配置和假凭据。
+P2：init/import/assets/prompts/plan/doctor、三个Skill短入口、本地差分。
+P3：图片全链、all-ready/DAG、200项假服务、URL/Base64、恢复/重试、内存控制。
+P4：视频一次运行、8段持续四并发、R3、票据、恢复/重试、delivery、独立IR支路。
+P5：wheel、无Node安装烟测、Skill打包、跨平台边界、计时/内存报告和使用说明。
+
+阶段是实施顺序，不是需要我逐阶段批准。继续完成已授权范围，遇到环境问题先安全解决；确实缺信息时说明具体阻塞，同时做不依赖它的工作。不以“可以继续实现”代替完成交付。
+
+十一、离线验收必须记录事实
+
+1. pytest默认阻止外网访问。只有明确注入的本机假HTTP服务可访问；依赖安装和官方文档查询不等于允许真实业务请求。假服务地址不能通过宽松配置泄漏到生产绕过TLS/私网限制。
+2. 不只mock一个函数：需要真实HTTP multipart/响应截断/连接池/代理模式/总等待测试，以及Windows真子进程锁、崩溃、原子替换测试。可缩短可注入预算加速，但至少有真实本地计时验证，不能全靠假时钟掩盖底层等待。
+3. 必测：中文/emoji/非BMP、BOM/CRLF/末尾换行、UTF-16旁白、7000限制、JCS向量、null/false/0/缺字段、未知字段和重复字段。
+4. 合成6集11段的换图与换稿：一次CLI完成；保持原ID、其他正文、素材和引用顺序；新计划读取新内容；零网络；纯换稿不读取媒体字节/容量账本。
+5. 图片200项同时就绪：全部逐项派发、准确归属、依赖解锁、两路解码/下载、单项失败其他回包保留、401/429/5xx、超时/截断、无自动POST重试、下载失败不再生成。
+6. 视频8段：前四个开始创建，终态即补位，第5到第8按序；最大容量与每批次限制正确；下载慢不阻塞补位。模拟旧未知、新授权一次重试、迟到ID/事件、可信终态、GET失败、POLL_LIMIT、恢复到5个held。
+7. 多故事：A图未知不锁死B；真实容量/损坏账本仍阻止不安全放行；A补位优先、A限1给B余位；无ID活owner不能偷释放。
+8. 在意图后、POST中、回执后、状态保存前、容量事件后、下载rename前后杀进程，验证不重复提交、数据可恢复。验证stable锁文件不unlink、并发替换不丢更新。
+9. 三个Skill对应的真实Python CLI子进程一次假视频执行可完整交付；全复用/部分复用/本次新生成标记正确；独立IR仅显式启用。
+10. wheel安装到独立临时venv，在隔离PATH无Node/npm、旧源码不可访问、仅合成配置的条件下执行--version、--help、离线故事流程和一次假视频完整流程。资源不能靠源码cwd侥幸可达。
+11. 同机同夹具比较旧基线与Python本地入口；旧基线若需构建，仅在PY_ROOT/.baseline隔离副本构建。至少20次，分冷/热启动，报告median/P95。超过20%或绝对50ms的回归需要解释和合理优化，不删校验凑速度。
+12. 记录图片200项首末发送时间、等待原因、峰值内存、事件循环延迟；视频每段准备、意图保存、发送、taskId、终态、补位、下载、交付耗时。区分Python本地耗时与假供应商延迟，不能推导真实远端速度。
+13. 依赖准备后实际运行静态检查、类型检查、完整pytest、进程/HTTP/打包测试及wheel构建；把最终命令写进scripts和README。例如以下命令必须在对应入口实现后真实执行，不先写成“已经通过”：
+    uv sync --locked --link-mode copy
+    uv run --locked --no-sync ruff check .
+    uv run --locked --no-sync mypy src/metasocli_py
+    uv run --locked --no-sync python -m pytest
+    uv build
+    .venv\Scripts\python.exe -m metasocli_py --version
+    .venv\Scripts\python.exe -m metasocli_py --help
+    其他平台使用实际.venv/bin/python；真实安装包烟测由专用脚本实现并执行。
+14. 记录实际命令、退出码、通过/失败/跳过。测试失败要解决或列出准确外部阻塞；跳过不能算通过。只通过静态文本检查不代表流程完成，也不宣称供应商真实生成已验收。
+
+十二、最终交付
+
+交付完整源码与wheel、锁文件、六个新项目Skill、三个用户入口安装说明、SOURCE_BASELINE、FEATURE_MATRIX、测试场景映射、BEHAVIOR_CONTRACT、网络/状态恢复说明、迁移边界、全量离线报告、性能/内存报告、无密钥配置说明、普通/旁白/tk用法和版本/提交号。
+
+报告清楚：已经实现什么、哪些离线验证通过、哪些平台未验收、是否尚未真实调用。缺功能不得标完成。真实付费测试必须留到用户后续明确指定范围和次数。
+
+全程保留旧Node项目、旧凭据、旧Skill和生产故事不变；结束核对旧源码Git状态没有被本次修改。新项目完成前不要替换旧正式入口，完成后也不要自动启用同账号双引擎提交。不要推送GitHub。

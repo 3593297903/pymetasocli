@@ -1,0 +1,120 @@
+{
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\pymetaso\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "architecture": "AMD64",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--locked",
+        "--link-mode",
+        "copy"
+      ],
+      "exitCode": 0,
+      "seconds": 0.02853569999570027,
+      "log": ".work\\reports\\gate-01.log"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--no-sync",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exitCode": 0,
+      "seconds": 0.04648559994529933,
+      "log": ".work\\reports\\gate-02.log"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--no-sync",
+        "mypy",
+        "src/metasocli_py"
+      ],
+      "exitCode": 0,
+      "seconds": 0.4382945999968797,
+      "log": ".work\\reports\\gate-03.log"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--no-sync",
+        "python",
+        "-m",
+        "pytest",
+        "--junitxml=.work/reports/pytest.xml"
+      ],
+      "exitCode": 0,
+      "seconds": 287.00416800001403,
+      "log": ".work\\reports\\gate-04.log"
+    },
+    {
+      "command": [
+        "uv",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 5.835874299984425,
+      "log": ".work\\reports\\gate-05.log"
+    },
+    {
+      "command": [
+        "E:\\pymetaso\\.venv\\Scripts\\python.exe",
+        "-m",
+        "metasocli_py",
+        "--version"
+      ],
+      "exitCode": 0,
+      "seconds": 0.21920749999117106,
+      "log": ".work\\reports\\gate-06.log"
+    },
+    {
+      "command": [
+        "E:\\pymetaso\\.venv\\Scripts\\python.exe",
+        "-m",
+        "metasocli_py",
+        "--help"
+      ],
+      "exitCode": 0,
+      "seconds": 0.2174421999952756,
+      "log": ".work\\reports\\gate-07.log"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--no-sync",
+        "python",
+        "scripts/package_smoke.py"
+      ],
+      "exitCode": 0,
+      "seconds": 10.451746299979277,
+      "log": ".work\\reports\\gate-08.log"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--no-sync",
+        "python",
+        "scripts/benchmark.py"
+      ],
+      "exitCode": 0,
+      "seconds": 82.44008500000928,
+      "log": ".work\\reports\\gate-09.log"
+    }
+  ],
+  "complete": true
+}

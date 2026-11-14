@@ -1,0 +1,11 @@
+usage: metasocli-py [-h] [--version]
+                    {init,import,assets,prompts,plan,video,batch,generate,resume,download,status,doctor,attach-task,auth,images,legacy,skills,context-ir} ...
+
+Independent Python story and generation CLI
+
+positional arguments:
+  {init,import,assets,prompts,plan,video,batch,generate,resume,download,status,doctor,attach-task,auth,images,legacy,skills,context-ir}
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit

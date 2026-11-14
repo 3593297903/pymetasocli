@@ -1,0 +1,40 @@
+Starting bench-before-30-1
+{"label": "bench-before-30-1", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "before", "--count", "30", "--repeat", "1"], "exitCode": 0, "seconds": 10.534245999995619, "startedAt": "2026-11-13T10:44:05.329220+00:00", "log": "logs/bench-before-30-1.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "before", "count": 30, "repeat": 1, "firstSendMs": 1064.9254000163637, "lastSendMs": 3063.0031999899074, "totalMs": 7983.335400000215, "mappingAndFilesVerified": true}
+
+Starting bench-after-30-1
+{"label": "bench-after-30-1", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "after", "--count", "30", "--repeat", "1"], "exitCode": 0, "seconds": 10.012740199977998, "startedAt": "2026-11-13T10:44:15.958743+00:00", "log": "logs/bench-after-30-1.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "after", "count": 30, "repeat": 1, "firstSendMs": 928.8429000298493, "lastSendMs": 2597.1066000056453, "totalMs": 7793.669699982274, "mappingAndFilesVerified": true}
+
+Starting bench-after-30-2
+{"label": "bench-after-30-2", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "after", "--count", "30", "--repeat", "2"], "exitCode": 0, "seconds": 10.758580600027926, "startedAt": "2026-11-13T10:44:26.071143+00:00", "log": "logs/bench-after-30-2.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "after", "count": 30, "repeat": 2, "firstSendMs": 1004.278999986127, "lastSendMs": 2720.4739000299014, "totalMs": 8159.988600003999, "mappingAndFilesVerified": true}
+
+Starting bench-before-30-2
+{"label": "bench-before-30-2", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "before", "--count", "30", "--repeat", "2"], "exitCode": 0, "seconds": 10.949589799973182, "startedAt": "2026-11-13T10:44:36.926781+00:00", "log": "logs/bench-before-30-2.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "before", "count": 30, "repeat": 2, "firstSendMs": 1208.8490999885835, "lastSendMs": 3418.483799963724, "totalMs": 8466.955099953339, "mappingAndFilesVerified": true}
+
+Starting bench-before-30-3
+{"label": "bench-before-30-3", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "before", "--count", "30", "--repeat", "3"], "exitCode": 0, "seconds": 10.739877399988472, "startedAt": "2026-11-13T10:44:47.976181+00:00", "log": "logs/bench-before-30-3.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "before", "count": 30, "repeat": 3, "firstSendMs": 1136.6806000005454, "lastSendMs": 3189.3319999799132, "totalMs": 8247.664999973495, "mappingAndFilesVerified": true}
+
+Starting bench-after-30-3
+{"label": "bench-after-30-3", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "after", "--count", "30", "--repeat", "3"], "exitCode": 0, "seconds": 10.839429199986625, "startedAt": "2026-11-13T10:44:58.815901+00:00", "log": "logs/bench-after-30-3.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "after", "count": 30, "repeat": 3, "firstSendMs": 957.3723999783397, "lastSendMs": 2817.8841999615543, "totalMs": 8260.294799983967, "mappingAndFilesVerified": true}
+
+Starting bench-before-200-1
+{"label": "bench-before-200-1", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "before", "--count", "200", "--repeat", "1"], "exitCode": 0, "seconds": 98.81011319998652, "startedAt": "2026-11-13T10:45:09.764783+00:00", "log": "logs/bench-before-200-1.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "before", "count": 200, "repeat": 1, "firstSendMs": 1791.0367000149563, "lastSendMs": 43996.026600012556, "totalMs": 91329.49090003967, "mappingAndFilesVerified": true}
+
+Starting bench-after-200-1
+{"label": "bench-after-200-1", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "after", "--count", "200", "--repeat", "1"], "exitCode": 0, "seconds": 86.2760037999833, "startedAt": "2026-11-13T10:46:48.674731+00:00", "log": "logs/bench-after-200-1.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "after", "count": 200, "repeat": 1, "firstSendMs": 1244.7387999854982, "lastSendMs": 31024.900799966417, "totalMs": 79348.31189998658, "mappingAndFilesVerified": true}
+
+Starting bench-before-30-early
+{"label": "bench-before-30-early", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "before", "--count", "30", "--scenario", "early-results"], "exitCode": 0, "seconds": 10.415612399985548, "startedAt": "2026-11-13T10:48:15.051702+00:00", "log": "logs/bench-before-30-early.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "before", "count": 30, "repeat": 1, "firstSendMs": 1113.4281000122428, "lastSendMs": 3493.583000032231, "totalMs": 8077.333000022918, "mappingAndFilesVerified": true}
+
+Starting bench-after-30-early
+{"label": "bench-after-30-early", "command": ["E:\\pymetaso\\.venv\\Scripts\\python.exe", "-X", "utf8", "-B", "E:\\pymetaso\\.work\\cf-04b13d50\\benchmark.py", "after", "--count", "30", "--scenario", "early-results"], "exitCode": 0, "seconds": 10.482188199996017, "startedAt": "2026-11-13T10:48:25.562913+00:00", "log": "logs/bench-after-30-early.log", "UV_OFFLINE": "1", "clearedKeys": ["METASO_API_KEY", "METASOCLI_IMAGE_API_KEY", "METASOCLI_PY_METASO_API_KEY", "METASOCLI_PY_IMAGE_API_KEY"], "isolatedChild": true}
+{"variant": "after", "count": 30, "repeat": 1, "firstSendMs": 956.1819999944419, "lastSendMs": 3163.7762999744155, "totalMs": 7964.565199974459, "mappingAndFilesVerified": true}
+

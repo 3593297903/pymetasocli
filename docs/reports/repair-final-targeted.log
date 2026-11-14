@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.2.0, pluggy-1.7.0
+rootdir: E:\pymetaso
+configfile: pyproject.toml
+plugins: anyio-4.16.0, hypothesis-6.170.15, asyncio-1.5.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collected 38 items
+
+tests\test_repair_images.py ................                             [ 42%]
+tests\test_repair_video.py ...............                               [ 81%]
+tests\test_retry_ir_edges.py ....                                        [ 92%]
+tests\test_independent_review.py ...                                     [100%]
+
+- generated xml file: E:\pymetaso\.work\recovery-fix-20261113-2b10f1fa\final-targeted.xml -
+======================== 38 passed in 74.40s (0:01:14) ========================

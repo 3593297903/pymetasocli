@@ -1,0 +1,626 @@
+{
+  "version": "0.1.0",
+  "newGitCommit": null,
+  "artifacts": [
+    {
+      "path": "E:\\pymetaso\\dist\\metasocli_py-0.1.0-py3-none-any.whl",
+      "bytes": 200745,
+      "sha256": "411440ba2ba22c441152b4a58aa52fe8d5c1cc1672ca6164fcde1e205f658f60",
+      "archiveEntries": 94
+    },
+    {
+      "path": "E:\\pymetaso\\dist\\metasocli_py-0.1.0.tar.gz",
+      "bytes": 463639,
+      "sha256": "711f699c3f63dfea35aa4538e6e2d7d38558eb74e4c12e8943edfc5e17dc6091",
+      "archiveEntries": 252
+    }
+  ],
+  "implementationFiles": [
+    {
+      "path": "src/metasocli_py/__init__.py",
+      "sha256": "dd19e13bc92ccf9935ea51e40fed81045e6c17dd8cf5ea25cb10343bb65a9f03"
+    },
+    {
+      "path": "src/metasocli_py/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "src/metasocli_py/application/__init__.py",
+      "sha256": "0961d703721cf5f7e64b9d76a7e60a91497628bc1cf7b08c6b67419652425ae3"
+    },
+    {
+      "path": "src/metasocli_py/application/assets.py",
+      "sha256": "c4b54770d8abbb7b6e6ec91b844b74db687d958a539a65c6ff46f92232a5153b"
+    },
+    {
+      "path": "src/metasocli_py/application/legacy.py",
+      "sha256": "7f33f1eefc521284782fd917681ec4af4ace1d225cbe3d4b6e794f49115be525"
+    },
+    {
+      "path": "src/metasocli_py/application/skills.py",
+      "sha256": "3b2f7db4cc66cd329b93e1ad5f244e06dbc9df4b9cb247957c582889e1a9f22e"
+    },
+    {
+      "path": "src/metasocli_py/application/stages.py",
+      "sha256": "2742fa9cf7209d2744cdff3a46605105cd139b1f163765902f1530ed65a2b194"
+    },
+    {
+      "path": "src/metasocli_py/application/story.py",
+      "sha256": "4c03868e780f9337598b5ac1c6978feda8cabeab1b3d0b1c552be7467242f761"
+    },
+    {
+      "path": "src/metasocli_py/cli.py",
+      "sha256": "f2332ea1adafda369fe0a4184fe271b74101f39e71fb0260859cb52e52172af5"
+    },
+    {
+      "path": "src/metasocli_py/contracts/__init__.py",
+      "sha256": "60eb62ca53fddd3e0c33489345900439096e072b6c0f1d3bc0c38673f54494b3"
+    },
+    {
+      "path": "src/metasocli_py/contracts/records.py",
+      "sha256": "0df383a41739c6583854d7c8da99d135d4ce83f5fda68345ea11183910241725"
+    },
+    {
+      "path": "src/metasocli_py/contracts/story.py",
+      "sha256": "9dc2412b84cefdb198fe730128beecea8884a12b46d33b294d7cd9c02619e756"
+    },
+    {
+      "path": "src/metasocli_py/credentials/__init__.py",
+      "sha256": "cd7170c251c6f279a955617b3e963b17952c299684f6a137739b1de26e52f05d"
+    },
+    {
+      "path": "src/metasocli_py/credentials/config.py",
+      "sha256": "70151f14a16319a3b0f05dea4a1f456f6251638d3752c495a0013b26f2527c89"
+    },
+    {
+      "path": "src/metasocli_py/credentials/connect.py",
+      "sha256": "51acb1aa250c20eaac7e3e3260e1e9fa6ff2a284b43e7c358af9385f64389728"
+    },
+    {
+      "path": "src/metasocli_py/credentials/network.py",
+      "sha256": "7ca8d18133704c3001f9738d01c19586096380830273cd97692648b59a88fcfa"
+    },
+    {
+      "path": "src/metasocli_py/domain/__init__.py",
+      "sha256": "88ce8c6e86cfe930168355be1010606a40637db3f951336b272249076da8d070"
+    },
+    {
+      "path": "src/metasocli_py/domain/errors.py",
+      "sha256": "60305f2be2652f64a37b535db68a94d0bc2a335a8634ccd8c1aab598101bd6d8"
+    },
+    {
+      "path": "src/metasocli_py/domain/text.py",
+      "sha256": "c284a0e54903d73dce68df180287f474f1cc4e807d6a7fb6191bdc009dc9055e"
+    },
+    {
+      "path": "src/metasocli_py/images/__init__.py",
+      "sha256": "32c46ceb9bfdd4164bb393305e6efde551362b1fbb4a81d669b5256de5348a84"
+    },
+    {
+      "path": "src/metasocli_py/images/collection.py",
+      "sha256": "5e9c13caad51713a94b74eceffc698ee05ac3b78b7e6e06c297f8c9293461faa"
+    },
+    {
+      "path": "src/metasocli_py/images/contracts.py",
+      "sha256": "e3036b7d4e2c6e889f2f45d7465907ba407f8d009745e65b7fb1debb7e5fafba"
+    },
+    {
+      "path": "src/metasocli_py/images/proof_cache.py",
+      "sha256": "205adca3da2f075ce294476028e25c577d425a2987fd6ec2b61caa035befff40"
+    },
+    {
+      "path": "src/metasocli_py/images/recovery.py",
+      "sha256": "c003947f8c772bf5027330cbf7b5af1f6665f69336a8777a1bdc0435aacb8d0d"
+    },
+    {
+      "path": "src/metasocli_py/images/reporting.py",
+      "sha256": "20f83bcd9ecabff2b2f949311d32856a7682ff08417ea9011c2aac9da28581eb"
+    },
+    {
+      "path": "src/metasocli_py/images/resources.py",
+      "sha256": "a3ea5a15fe8147321287f1c14aeef4a0fa3601e518eca5c1661b7c82728bc7ad"
+    },
+    {
+      "path": "src/metasocli_py/images/workflow.py",
+      "sha256": "bfb8cf6be7c4ce2e82dda33830158528656649018f17a04aeabacec403fff44c"
+    },
+    {
+      "path": "src/metasocli_py/media/__init__.py",
+      "sha256": "59d3a209aaee5d0154ca7050f61d1b5190ad209bb1e6bc45a58f4e6ccd61ceee"
+    },
+    {
+      "path": "src/metasocli_py/media/av.py",
+      "sha256": "5068c789dff1334e7a84a2a63d614d02b3b3af622efd2856badf43f2fd16158d"
+    },
+    {
+      "path": "src/metasocli_py/media/denoise.py",
+      "sha256": "d962beebb6271cefd2e54e06cbbd0590c7b48fb6a61f582170974966fba6de76"
+    },
+    {
+      "path": "src/metasocli_py/media/handoff.py",
+      "sha256": "0e159ff5e0365302021070122d755834e8a03806a6d0df4e4309e27827543c93"
+    },
+    {
+      "path": "src/metasocli_py/media/inspect.py",
+      "sha256": "ce59db7a3a67b87f178814e292959fa4c7b013927b9c99445237b0420db60d29"
+    },
+    {
+      "path": "src/metasocli_py/persistence/__init__.py",
+      "sha256": "c02412c458f6282e6e56cf4e5ace219d0b0b35433f9602174c6ff4da2d314d7a"
+    },
+    {
+      "path": "src/metasocli_py/persistence/codec.py",
+      "sha256": "9540f1c43c683f7bde8a79739cf5d7e8d66b43292a657473505cf6be3b7a11ed"
+    },
+    {
+      "path": "src/metasocli_py/persistence/files.py",
+      "sha256": "39ecfcc09042869e59c4373374e27a222f6f108a65f0c430fa29cf5aa1c40ab4"
+    },
+    {
+      "path": "src/metasocli_py/providers/__init__.py",
+      "sha256": "8d62978de3c39afc185ea370c2371492236415c2f8176a072d9b333a9283017f"
+    },
+    {
+      "path": "src/metasocli_py/providers/http.py",
+      "sha256": "e64838188ae495b7c87d5e756a6628c0538ee0f0ba67d55ea1d45283e28ee6d6"
+    },
+    {
+      "path": "src/metasocli_py/providers/metaso.py",
+      "sha256": "c2b58e227a299929a5ee5c0ffa6015b1dcfc971b1282ecf60fde074b020fa80e"
+    },
+    {
+      "path": "src/metasocli_py/providers/yiciyuang.py",
+      "sha256": "4868ee7b305bbf6766eeccca8e2c8ba228732499d5a774b66865fdfdfe955dc9"
+    },
+    {
+      "path": "src/metasocli_py/resources/__init__.py",
+      "sha256": "63b1a8584dcf27387b93d68495108351c04e8f07516c587469cf1af6907004cc"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/character-board.md",
+      "sha256": "b92a3b0324764828341176961d8ddfb330f8c54a2519e379529e4cf7e5d7b45c"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/denoise/character.txt",
+      "sha256": "fa0c6628aca1e371ffa5bf80657c3b46f14c065f4ba2683e68227d50b4145b71"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/denoise/manifest.json",
+      "sha256": "67769c09ed7446d7a86d1c8f0d0bebfc1f19f9314760b25973000bd614b2b040"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/denoise/prop.txt",
+      "sha256": "b334ee91c91ba678fde1a06c5520ac725e845964039e2093ec2568684ca505ac"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/denoise/scene.txt",
+      "sha256": "455836fe6522f6663028fbac36009d4d360dae04492a52a4ab1dad0a625199c2"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/denoise-policy.md",
+      "sha256": "58149b2ebb2a75df5d345d41cd54e721d7f58cf7ce626164a1a4eda043c8bd96"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/first-frame.md",
+      "sha256": "78770fd98f914424bdeb3534938e7e2c1c9e0a6fe0c9ef2143c6f38840419d5b"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/handoff-contract.md",
+      "sha256": "1616cc2db2b0a87bbb606723fa9b7ed5d8f055efa9481228939289de3a35a1ef"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/image-workflow.md",
+      "sha256": "255c4b3cf00b03f3d018a30daaca92feeaf3c6015264472028f58dfcee3f7b79"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/prop-board.md",
+      "sha256": "32ada69ef2dd4394d9f6a617ca91196af98ede1db2aa252170a951aedfb2f352"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/scene-board.md",
+      "sha256": "b96cddd57ce70e5fae3e921e490ad8dc840ac4ef764e16713eb31bc3beaf4505"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/selected-local-image.md",
+      "sha256": "de633c5e9f77917e87017a9ba6020a4bc544a1b573041d5e1db2d40c87765d30"
+    },
+    {
+      "path": "src/metasocli_py/resources/reference-images/shared-visual-policy.md",
+      "sha256": "f29dd8a738309c1c1549b6565ba22f7f56c5f18f25891ebb962d6c491e359109"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py/SKILL.md",
+      "sha256": "e3b0cf0ef10c65be9d0bcb26e9ce224f9392edd577ecff9cc16b588ea9045145"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-prompt-engine/SKILL.md",
+      "sha256": "fb867fc9d7066a9d546f93eefb5a4afba7dc2575715a2e7bb3a67e572d12d594"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/character-board.md",
+      "sha256": "b92a3b0324764828341176961d8ddfb330f8c54a2519e379529e4cf7e5d7b45c"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/denoise/character.txt",
+      "sha256": "fa0c6628aca1e371ffa5bf80657c3b46f14c065f4ba2683e68227d50b4145b71"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/denoise/manifest.json",
+      "sha256": "67769c09ed7446d7a86d1c8f0d0bebfc1f19f9314760b25973000bd614b2b040"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/denoise/prop.txt",
+      "sha256": "b334ee91c91ba678fde1a06c5520ac725e845964039e2093ec2568684ca505ac"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/denoise/scene.txt",
+      "sha256": "455836fe6522f6663028fbac36009d4d360dae04492a52a4ab1dad0a625199c2"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/denoise-policy.md",
+      "sha256": "58149b2ebb2a75df5d345d41cd54e721d7f58cf7ce626164a1a4eda043c8bd96"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/first-frame.md",
+      "sha256": "78770fd98f914424bdeb3534938e7e2c1c9e0a6fe0c9ef2143c6f38840419d5b"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/handoff-contract.md",
+      "sha256": "1616cc2db2b0a87bbb606723fa9b7ed5d8f055efa9481228939289de3a35a1ef"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/image-workflow.md",
+      "sha256": "255c4b3cf00b03f3d018a30daaca92feeaf3c6015264472028f58dfcee3f7b79"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/prop-board.md",
+      "sha256": "32ada69ef2dd4394d9f6a617ca91196af98ede1db2aa252170a951aedfb2f352"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/scene-board.md",
+      "sha256": "b96cddd57ce70e5fae3e921e490ad8dc840ac4ef764e16713eb31bc3beaf4505"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/selected-local-image.md",
+      "sha256": "de633c5e9f77917e87017a9ba6020a4bc544a1b573041d5e1db2d40c87765d30"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/references/reference-images/shared-visual-policy.md",
+      "sha256": "f29dd8a738309c1c1549b6565ba22f7f56c5f18f25891ebb962d6c491e359109"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-reference-images/SKILL.md",
+      "sha256": "668965818b0eea62fcc67b16645327495e167dfed053d8f1e94a94086b1faed2"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-video-prompts/SKILL.md",
+      "sha256": "f2c5c4bdc14b5b69ef78245262113f46fcca42ed74c16aab47929947d7cc9f2a"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasocli-py-video-prompts-旁白/SKILL.md",
+      "sha256": "93d2570fb499d0410f3a66b56ab21e6b39739b412d8d4fffbd2da2518a6e0623"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasoclitk-py/references/tk/character-board.md",
+      "sha256": "d58a5ae043991890a8b4b606d40c34f18edd749b26aa35e54bf67f80e3fd08a8"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasoclitk-py/references/tk/prop-board.md",
+      "sha256": "64fd677d05ff4429a935125a15e516c4739d57bdeed74b50e309d94375252324"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasoclitk-py/references/tk/scene-board.md",
+      "sha256": "eeae303a5dae8a0e623fdea86af2b8c9a5d4819e5b78d213a273e26c115264e5"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasoclitk-py/references/tk/visual-style.md",
+      "sha256": "ea571833be2f9d1180eff1ab41ecf981fa5a4bd42b97e3dc99bc43b7fd37da08"
+    },
+    {
+      "path": "src/metasocli_py/resources/skills/metasoclitk-py/SKILL.md",
+      "sha256": "c1944489c23abab90b0faf8db1624152c74d71c62392d28e390451f362f689b8"
+    },
+    {
+      "path": "src/metasocli_py/resources/tk/character-board.md",
+      "sha256": "d58a5ae043991890a8b4b606d40c34f18edd749b26aa35e54bf67f80e3fd08a8"
+    },
+    {
+      "path": "src/metasocli_py/resources/tk/prop-board.md",
+      "sha256": "64fd677d05ff4429a935125a15e516c4739d57bdeed74b50e309d94375252324"
+    },
+    {
+      "path": "src/metasocli_py/resources/tk/scene-board.md",
+      "sha256": "eeae303a5dae8a0e623fdea86af2b8c9a5d4819e5b78d213a273e26c115264e5"
+    },
+    {
+      "path": "src/metasocli_py/resources/tk/visual-style.md",
+      "sha256": "ea571833be2f9d1180eff1ab41ecf981fa5a4bd42b97e3dc99bc43b7fd37da08"
+    },
+    {
+      "path": "src/metasocli_py/telemetry/__init__.py",
+      "sha256": "5093b62a9ddc9b9a80f390628005ee7a76596aa02496fc5c40816d628b729cfa"
+    },
+    {
+      "path": "src/metasocli_py/telemetry/safe.py",
+      "sha256": "f481972010e2c393a474c92119635683fcef7adbeed8ce9e29a8bb4a554ba8e4"
+    },
+    {
+      "path": "src/metasocli_py/video/__init__.py",
+      "sha256": "de0bbc125ab539395badac9fc1b10787e94eaf91e16faf3108fc116821c89152"
+    },
+    {
+      "path": "src/metasocli_py/video/capacity.py",
+      "sha256": "b65f2b4dbbbd44c24196bfe87928f2cc4df0484bd3004163dfc35b57ad685880"
+    },
+    {
+      "path": "src/metasocli_py/video/context_ir.py",
+      "sha256": "b6faf32ea6841d89f4a9b59573dcf029de0b86f5a51ea35b63dceeb7c0056b08"
+    },
+    {
+      "path": "src/metasocli_py/video/execution.py",
+      "sha256": "98b37c5d134863c0bc197212d559222527c479d3e5b82105a90387a0f0c3958b"
+    },
+    {
+      "path": "src/metasocli_py/video/planning.py",
+      "sha256": "9789d97856f9cfec0898cfcf40594a7b7593b49233f3b4072f9c4ef95829c845"
+    },
+    {
+      "path": "src/metasocli_py/video/retry.py",
+      "sha256": "069cdaff4360588f713250b84986b02dadd9bdb8a597ed1549d4f2aad65fa847"
+    },
+    {
+      "path": "src/metasocli_py/video/single.py",
+      "sha256": "7b6e0c6f0c8c312fd5ce7de0de5ff7ca10bfb5d3b283e7ec61e8d498147eb14b"
+    },
+    {
+      "path": "src/metasocli_py/video/store.py",
+      "sha256": "162ea463ed2f35fe90527285117187913ccb3919bb6f868d679c2395e96d0cd8"
+    },
+    {
+      "path": "scripts/adapt_resources.py",
+      "sha256": "ae8eccdbf685c433b6b460f2de204d302c7172937d03a670494f8fe96dade3ce"
+    },
+    {
+      "path": "scripts/audit_artifacts.py",
+      "sha256": "fe877f887daf5bda398d70c6d04adc4edb8254229da73821aac4a3a689142fa9"
+    },
+    {
+      "path": "scripts/baseline_bridge.mjs",
+      "sha256": "9a002ee0b14f03ec9384634bb2b75c822518729f3c803c2725cbe4595fc4d1b6"
+    },
+    {
+      "path": "scripts/benchmark.py",
+      "sha256": "a9dc304803fdb9eb6fbbe1995ef80bbf1b38e0d4a0832b74341502d0cadf6a04"
+    },
+    {
+      "path": "scripts/build_reference_docs.py",
+      "sha256": "18ece984cce2d95750c6751aabd0049d4a43353cd51c0be10f6789266f70a455"
+    },
+    {
+      "path": "scripts/build_skills.py",
+      "sha256": "f97fb0392a98c23a8e932b204c917db9b030cc4394a4ab1861e6dcc37ce34abe"
+    },
+    {
+      "path": "scripts/capture_baseline.py",
+      "sha256": "9cf16260a4c8a79ab939d6ea117add8fcb05c73d1f18821fc2bd8a58190ffd8b"
+    },
+    {
+      "path": "scripts/copy_resources.py",
+      "sha256": "7034322041a37d75080f2b468404fc0d86c98de5d8763f361d86e41dd9bedacf"
+    },
+    {
+      "path": "scripts/finalize_reports.py",
+      "sha256": "9fe33f42ac1ae72dc22f6591a874e2265f121304ac174675ccdd72d8df30403f"
+    },
+    {
+      "path": "scripts/package_smoke.py",
+      "sha256": "8ace09bb30285a9c5715e4381d98d896bf5d6b72c4936eedc5cffbbd9b9c13f8"
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "7e291c4446d20fedb2ee6c4fa125d8b5cf830df12eacf3203c8996d09becfd9c"
+    },
+    {
+      "path": "scripts/wheel_child.py",
+      "sha256": "c40b11b90baa053b3c54fbda59854ea509a32b9a06464fdceb253a248fd484ea"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "5f6a01677613c8d6c7685f1ab02cc23aa23325d6d6de4ec2cc643c2efe60e023"
+    },
+    {
+      "path": "tests/fake_http.py",
+      "sha256": "bd4ecdc0d1682614d437b37b7cda2aa55c1be5ab09684d892aaab9b5346f9c0b"
+    },
+    {
+      "path": "tests/process_worker.py",
+      "sha256": "129f0ae01b679125e9dfb3f159e3ac2e688d7576633ae3b267b86cec394d1430"
+    },
+    {
+      "path": "tests/test_acceptance_edges.py",
+      "sha256": "aa65ed035818515937401b16271dc1cab981e4bd37fc11e3455a4c1e1be15167"
+    },
+    {
+      "path": "tests/test_capacity_ir.py",
+      "sha256": "ec81e256f93a52a6dccfb85386263c4548b14c4feae48e7fee6558bbce8f68ce"
+    },
+    {
+      "path": "tests/test_cf_cache_boundaries.py",
+      "sha256": "51c29c45f00f358ff246f47b5cf8c2cb42855357e9be055e4a84fe93b9377954"
+    },
+    {
+      "path": "tests/test_credentials_skills.py",
+      "sha256": "dd56248a2eb73632a9047f79174e82a51d278330f9e844249e8e72a30fc38446"
+    },
+    {
+      "path": "tests/test_foundation.py",
+      "sha256": "18cdb992f636585ca3d91ceba2e25d37849845aa846e7f14b650ecabf8b925dd"
+    },
+    {
+      "path": "tests/test_history_delayed_wakeup.py",
+      "sha256": "76d8ed00ef465a73d59877ded7b5cf5b142b61009f37a9c7fa306ffcff51c33f"
+    },
+    {
+      "path": "tests/test_history_round_budget.py",
+      "sha256": "d0b94dc0f5d5766ddc5cdc361b1809839ed9047d1d5e405fddf0b8fc7d766e87"
+    },
+    {
+      "path": "tests/test_image_http.py",
+      "sha256": "ff759903b04b0d8d88201b200525f34b0cc0436850399e9a7755071d583302d8"
+    },
+    {
+      "path": "tests/test_image_proof_cache.py",
+      "sha256": "c90f38f5b0ed89a200eb2c6855e37797af955ac7cf2b240b98f126ecb8c75c3a"
+    },
+    {
+      "path": "tests/test_image_recovery.py",
+      "sha256": "1929796aab06c8f08de092f9eeb5887852d4c5c3ad7be9aa824ad307049d9033"
+    },
+    {
+      "path": "tests/test_independent_review.py",
+      "sha256": "9a82efd6964613ead7688499d8aa8a9d6dd02dd6dcf955e1423f5651f6d07382"
+    },
+    {
+      "path": "tests/test_local_story.py",
+      "sha256": "5efdf2a0269722bf926fb27c3746acebbb12d90776f1f1141cac1d2549808a5d"
+    },
+    {
+      "path": "tests/test_network_atomic.py",
+      "sha256": "fac301d0ddfed3ccdead737018f0f1dc173a8f215ea08d039412a1479a4666c8"
+    },
+    {
+      "path": "tests/test_process_boundaries.py",
+      "sha256": "73cdc47309f41d39112e00fbc59112a26f2d647a93a9d4154a2fd2e78e38c553"
+    },
+    {
+      "path": "tests/test_repair_images.py",
+      "sha256": "61354f56504a1bee6c23a465d08845cf8ce1ada289a283e28aae62c03dc47d3f"
+    },
+    {
+      "path": "tests/test_repair_video.py",
+      "sha256": "21afa8a7289d4a48e6dd86be88bf77184de6f74c6441042511b1c3fadd5e7ead"
+    },
+    {
+      "path": "tests/test_retry_ir_edges.py",
+      "sha256": "71aaf2cc3e281d05296e7924d88d1a9beab67f84d71451e59f33b4458b7f6025"
+    },
+    {
+      "path": "tests/test_revision_boundaries.py",
+      "sha256": "9a643975114ae4ccbc820d4713ee61d345043a3f8e94fcfaf1f369e0bca44611"
+    },
+    {
+      "path": "tests/test_video_http.py",
+      "sha256": "340c1c9c63e59de3918268c4bf9aab73bb81187fba1018283f1cd237f1f04e86"
+    },
+    {
+      "path": "skills/metasocli-py/SKILL.md",
+      "sha256": "e3b0cf0ef10c65be9d0bcb26e9ce224f9392edd577ecff9cc16b588ea9045145"
+    },
+    {
+      "path": "skills/metasocli-py-prompt-engine/SKILL.md",
+      "sha256": "fb867fc9d7066a9d546f93eefb5a4afba7dc2575715a2e7bb3a67e572d12d594"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/character-board.md",
+      "sha256": "b92a3b0324764828341176961d8ddfb330f8c54a2519e379529e4cf7e5d7b45c"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/denoise/character.txt",
+      "sha256": "fa0c6628aca1e371ffa5bf80657c3b46f14c065f4ba2683e68227d50b4145b71"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/denoise/manifest.json",
+      "sha256": "67769c09ed7446d7a86d1c8f0d0bebfc1f19f9314760b25973000bd614b2b040"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/denoise/prop.txt",
+      "sha256": "b334ee91c91ba678fde1a06c5520ac725e845964039e2093ec2568684ca505ac"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/denoise/scene.txt",
+      "sha256": "455836fe6522f6663028fbac36009d4d360dae04492a52a4ab1dad0a625199c2"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/denoise-policy.md",
+      "sha256": "58149b2ebb2a75df5d345d41cd54e721d7f58cf7ce626164a1a4eda043c8bd96"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/first-frame.md",
+      "sha256": "78770fd98f914424bdeb3534938e7e2c1c9e0a6fe0c9ef2143c6f38840419d5b"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/handoff-contract.md",
+      "sha256": "1616cc2db2b0a87bbb606723fa9b7ed5d8f055efa9481228939289de3a35a1ef"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/image-workflow.md",
+      "sha256": "255c4b3cf00b03f3d018a30daaca92feeaf3c6015264472028f58dfcee3f7b79"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/prop-board.md",
+      "sha256": "32ada69ef2dd4394d9f6a617ca91196af98ede1db2aa252170a951aedfb2f352"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/scene-board.md",
+      "sha256": "b96cddd57ce70e5fae3e921e490ad8dc840ac4ef764e16713eb31bc3beaf4505"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/selected-local-image.md",
+      "sha256": "de633c5e9f77917e87017a9ba6020a4bc544a1b573041d5e1db2d40c87765d30"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/references/reference-images/shared-visual-policy.md",
+      "sha256": "f29dd8a738309c1c1549b6565ba22f7f56c5f18f25891ebb962d6c491e359109"
+    },
+    {
+      "path": "skills/metasocli-py-reference-images/SKILL.md",
+      "sha256": "668965818b0eea62fcc67b16645327495e167dfed053d8f1e94a94086b1faed2"
+    },
+    {
+      "path": "skills/metasocli-py-video-prompts/SKILL.md",
+      "sha256": "f2c5c4bdc14b5b69ef78245262113f46fcca42ed74c16aab47929947d7cc9f2a"
+    },
+    {
+      "path": "skills/metasocli-py-video-prompts-旁白/SKILL.md",
+      "sha256": "93d2570fb499d0410f3a66b56ab21e6b39739b412d8d4fffbd2da2518a6e0623"
+    },
+    {
+      "path": "skills/metasoclitk-py/references/tk/character-board.md",
+      "sha256": "d58a5ae043991890a8b4b606d40c34f18edd749b26aa35e54bf67f80e3fd08a8"
+    },
+    {
+      "path": "skills/metasoclitk-py/references/tk/prop-board.md",
+      "sha256": "64fd677d05ff4429a935125a15e516c4739d57bdeed74b50e309d94375252324"
+    },
+    {
+      "path": "skills/metasoclitk-py/references/tk/scene-board.md",
+      "sha256": "eeae303a5dae8a0e623fdea86af2b8c9a5d4819e5b78d213a273e26c115264e5"
+    },
+    {
+      "path": "skills/metasoclitk-py/references/tk/visual-style.md",
+      "sha256": "ea571833be2f9d1180eff1ab41ecf981fa5a4bd42b97e3dc99bc43b7fd37da08"
+    },
+    {
+      "path": "skills/metasoclitk-py/SKILL.md",
+      "sha256": "c1944489c23abab90b0faf8db1624152c74d71c62392d28e390451f362f689b8"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "6b8baf4c5d5ea06b8b9ad75fab966bf0699220753da5c4e93d171772101b9e10"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "c3d3247a9750f907820124ca92bb72ce33bc32079c84b01119034be0b95dc7b7"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f996a4308ee840869cce501e4140a7fd33412f87d3763b2b3ba0cbb06b841645"
+    }
+  ],
+  "baselineExcluded": true,
+  "nodeRuntimeRequired": false
+}

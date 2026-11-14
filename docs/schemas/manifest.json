@@ -1,0 +1,583 @@
+{
+  "$defs": {
+    "Asset": {
+      "additionalProperties": false,
+      "properties": {
+        "recipe": {
+          "$ref": "#/$defs/Recipe"
+        },
+        "recipeHash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Recipehash",
+          "type": "string"
+        },
+        "media": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Media"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "recipe",
+        "recipeHash",
+        "media"
+      ],
+      "title": "Asset",
+      "type": "object"
+    },
+    "Cue": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "End",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "Cue",
+      "type": "object"
+    },
+    "Episode": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "script",
+            "video-prompts"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "offsetEncoding": {
+          "const": "utf16",
+          "default": "utf16",
+          "title": "Offsetencoding",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "segments": {
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "maxItems": 1000,
+          "minItems": 1,
+          "title": "Segments",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "source",
+        "segments"
+      ],
+      "title": "Episode",
+      "type": "object"
+    },
+    "Media": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "provenance": {
+          "enum": [
+            "user",
+            "imagegen"
+          ],
+          "title": "Provenance",
+          "type": "string"
+        },
+        "transport": {
+          "default": "data",
+          "enum": [
+            "data",
+            "url"
+          ],
+          "title": "Transport",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "mime": {
+          "enum": [
+            "image/png",
+            "image/jpeg",
+            "image/webp",
+            "audio/mpeg",
+            "audio/wav"
+          ],
+          "title": "Mime",
+          "type": "string"
+        },
+        "width": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Width"
+        },
+        "height": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Height"
+        },
+        "duration": {
+          "anyOf": [
+            {
+              "maximum": 15,
+              "minimum": 2,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Duration"
+        },
+        "sampleRate": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplerate"
+        },
+        "channels": {
+          "anyOf": [
+            {
+              "maximum": 2,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Channels"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes",
+        "provenance",
+        "mime"
+      ],
+      "title": "Media",
+      "type": "object"
+    },
+    "Narration": {
+      "additionalProperties": false,
+      "properties": {
+        "assetId": {
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "title": "Assetid",
+          "type": "string"
+        },
+        "cues": {
+          "items": {
+            "$ref": "#/$defs/Cue"
+          },
+          "maxItems": 100,
+          "minItems": 1,
+          "title": "Cues",
+          "type": "array"
+        }
+      },
+      "required": [
+        "assetId",
+        "cues"
+      ],
+      "title": "Narration",
+      "type": "object"
+    },
+    "Parameters": {
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "const": "MiniMax-H3",
+          "default": "MiniMax-H3",
+          "title": "Model",
+          "type": "string"
+        },
+        "resolution": {
+          "default": "768P",
+          "enum": [
+            "768P",
+            "2K"
+          ],
+          "title": "Resolution",
+          "type": "string"
+        },
+        "ratio": {
+          "default": "9:16",
+          "enum": [
+            "adaptive",
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "title": "Ratio",
+          "type": "string"
+        },
+        "contextIr": {
+          "default": true,
+          "title": "Contextir",
+          "type": "boolean"
+        },
+        "watermark": {
+          "default": false,
+          "title": "Watermark",
+          "type": "boolean"
+        }
+      },
+      "title": "Parameters",
+      "type": "object"
+    },
+    "Recipe": {
+      "additionalProperties": false,
+      "properties": {
+        "assetId": {
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "title": "Assetid",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "character",
+            "scene",
+            "prop",
+            "first_frame",
+            "narration"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "prompt": {
+          "maxLength": 32000,
+          "minLength": 1,
+          "title": "Prompt",
+          "type": "string"
+        },
+        "exactText": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Exacttext",
+          "type": "array"
+        },
+        "dependencies": {
+          "items": {
+            "maxLength": 80,
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "type": "string"
+          },
+          "title": "Dependencies",
+          "type": "array"
+        }
+      },
+      "required": [
+        "assetId",
+        "kind",
+        "prompt"
+      ],
+      "title": "Recipe",
+      "type": "object"
+    },
+    "Reference": {
+      "additionalProperties": false,
+      "properties": {
+        "assetId": {
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "title": "Assetid",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "reference_image",
+            "first_frame"
+          ],
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "assetId",
+        "role"
+      ],
+      "title": "Reference",
+      "type": "object"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "start": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "End",
+          "type": "integer"
+        },
+        "duration": {
+          "maximum": 15,
+          "minimum": 4,
+          "title": "Duration",
+          "type": "integer"
+        },
+        "prompt": {
+          "minLength": 1,
+          "title": "Prompt",
+          "type": "string"
+        },
+        "references": {
+          "items": {
+            "$ref": "#/$defs/Reference"
+          },
+          "maxItems": 9,
+          "title": "References",
+          "type": "array"
+        },
+        "parameters": {
+          "$ref": "#/$defs/Parameters"
+        },
+        "narration": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Narration"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "targetDurationSeconds": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "gt": 0,
+              "le": 15
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Targetdurationseconds"
+        },
+        "promptHash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Prompthash",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "start",
+        "end",
+        "duration",
+        "prompt",
+        "promptHash"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "origin": {
+          "title": "Origin",
+          "type": "string"
+        },
+        "rawPath": {
+          "title": "Rawpath",
+          "type": "string"
+        },
+        "rawHash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Rawhash",
+          "type": "string"
+        },
+        "textPath": {
+          "title": "Textpath",
+          "type": "string"
+        },
+        "textHash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Texthash",
+          "type": "string"
+        }
+      },
+      "required": [
+        "origin",
+        "rawPath",
+        "rawHash",
+        "textPath",
+        "textHash"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "title": "Schemaversion",
+      "type": "integer"
+    },
+    "owner": {
+      "const": "metasocli-py",
+      "title": "Owner",
+      "type": "string"
+    },
+    "hashVersion": {
+      "const": "jcs-sha256-v1",
+      "title": "Hashversion",
+      "type": "string"
+    },
+    "projectId": {
+      "pattern": "^[0-9a-f-]{36}$",
+      "title": "Projectid",
+      "type": "string"
+    },
+    "name": {
+      "maxLength": 500,
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "revision": {
+      "maximum": 9007199254740991,
+      "minimum": 0,
+      "title": "Revision",
+      "type": "integer"
+    },
+    "episodes": {
+      "items": {
+        "$ref": "#/$defs/Episode"
+      },
+      "maxItems": 1000,
+      "title": "Episodes",
+      "type": "array"
+    },
+    "assets": {
+      "items": {
+        "$ref": "#/$defs/Asset"
+      },
+      "maxItems": 2000,
+      "title": "Assets",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "owner",
+    "hashVersion",
+    "projectId",
+    "name",
+    "revision",
+    "episodes",
+    "assets"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

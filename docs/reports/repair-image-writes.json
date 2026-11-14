@@ -1,0 +1,21 @@
+{
+  "observedWorkflowJsonWrites": {
+    "authorization": 1,
+    "job:prepared": 1,
+    "quotaLedger": 3,
+    "job:submitting": 1,
+    "job:response_saved": 1,
+    "job:received": 1,
+    "job:downloaded": 1,
+    "job:registered": 1
+  },
+  "elapsedMs": 275.65429999958724,
+  "postCount": 1,
+  "protocolChangesPerRequestVsReviewedSource": {
+    "additionalPreparedJobWrite": 1,
+    "additionalIntentLedgerWrite": 1,
+    "removedRedundantRunBindingWrite": 1,
+    "netAdditionalWrites": 1
+  },
+  "countScope": "workflow.write_json; response stream and other-module receipt writes excluded"
+}

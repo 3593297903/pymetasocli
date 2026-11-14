@@ -1,0 +1,1780 @@
+[
+  {
+    "source": "AGENTS.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e99b384310869cfa77767f1498efcb588cc64219955af15fa68c0a9b09cfbe9b",
+    "target": ".baseline/AGENTS.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "README.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9faf458a7e6715feb33d541737c452bf68a6f8e5e4ca8a2e3077023ec3b48f01",
+    "target": ".baseline/README.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "START_HERE.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d19e21e013750819a4c95f2b0d41c21a0e49cbf760bf8a1c39835a98b63bcf31",
+    "target": ".baseline/START_HERE.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/ARCHITECTURE.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3e3d245efd2ffde6260eb02d46149476f233f273a9975379999f56d73c30c560",
+    "target": ".baseline/docs/ARCHITECTURE.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/CONTEXT_IR_REVIEW_20260919.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c9cded75915fb6e2da2944d6e9b8cbbe4b13c9a730a1cf179077d4e8489dd7b8",
+    "target": ".baseline/docs/CONTEXT_IR_REVIEW_20260919.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/CONTEXT_IR_WORKFLOW.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "328233d54986b089cdd7659fe83682e6d177ad495dd3ae2dc52a142e1048a59a",
+    "target": ".baseline/docs/CONTEXT_IR_WORKFLOW.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/CONTEXT_IR_WORKFLOW_HANDOFF.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "94fe8759b998e85f3f1f9e47962ffcb61eb456511d6b630bb09eb3ac4bbdf8c1",
+    "target": ".baseline/docs/CONTEXT_IR_WORKFLOW_HANDOFF.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/DURATION_ADAPTATION_HANDOFF.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "87cd1f3948b191fb344936e6b58808100bf2667b4f7295714f41ff75e6eb309d",
+    "target": ".baseline/docs/DURATION_ADAPTATION_HANDOFF.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/IMAGE_API_INTEGRATION_ANALYSIS.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a6a13bc168b271ea08306ca315109eb78e16f7900cc8f15237dd3703e3d3b79b",
+    "target": ".baseline/docs/IMAGE_API_INTEGRATION_ANALYSIS.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/IMAGE_API_INTEGRATION_IMPLEMENTATION_REPORT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "1b59ef00a0d3deed80270dec18ca10381ef39933c7d132bfc7a826906684ffef",
+    "target": ".baseline/docs/IMAGE_API_INTEGRATION_IMPLEMENTATION_REPORT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/IMAGE_API_INTEGRATION_PROPOSAL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e06af6aa74f9e64c91fc408256a616b58810e37c5d8550bdf0709afabdc9c122",
+    "target": ".baseline/docs/IMAGE_API_INTEGRATION_PROPOSAL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/IMAGE_API_USAGE.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "096ad94577080cfc352746fbfb0f33e43682e72ef2b6eaa7d4de5f659b69a25d",
+    "target": ".baseline/docs/IMAGE_API_USAGE.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/IMAGE_EXECUTION_AUTHORIZATION.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c00e29968254c686a533a77710a061574dc1b3617aa474a78d1ef66e45f49a8c",
+    "target": ".baseline/docs/IMAGE_EXECUTION_AUTHORIZATION.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/INLINE_CONTEXT_IR_WORKFLOW.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c2e5b84db99576bd0edc78d06c29488ca99e00437f72e5dff86144ff91124704",
+    "target": ".baseline/docs/INLINE_CONTEXT_IR_WORKFLOW.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/INPUT_FORMAT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b9383cc27be3a32768f9ccc29171822092bbc1f15f35c80fb68e2c4ac0414e6d",
+    "target": ".baseline/docs/INPUT_FORMAT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/METASOCLITK_DEPLOYMENT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c1b6b030f0028b8609dc24eea7759a764f51a25b523a75fbcb7fc5ef60364696",
+    "target": ".baseline/docs/METASOCLITK_DEPLOYMENT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/METASO_CONTRACT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4e0fee6694a529f0eba1a7a7caf863c82253075086c416fb776d76d1a1b87fd3",
+    "target": ".baseline/docs/METASO_CONTRACT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/MIGRATION_NOTES.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7910f9f702e3f5c6940ce40b6e0ad6164000d1dd794fc07495c825dff0636cc5",
+    "target": ".baseline/docs/MIGRATION_NOTES.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/NEW_DEVICE_RETRY_BUILD.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "af1dc083507dc4a364be24a7d819027536d9317b8af300f610a5c2ebb1ceccd0",
+    "target": ".baseline/docs/NEW_DEVICE_RETRY_BUILD.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/PROJECT_ISOLATION.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4955604ab2d3ce84c6f63a785a4d7541e1580ae111e35ed7cfb00ceb631a44e8",
+    "target": ".baseline/docs/PROJECT_ISOLATION.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/PROMPT_REPLACEMENT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "87314a0512e1663bcd2aed531ed328510a857c3323bd6fecea1fbde4b3da2b80",
+    "target": ".baseline/docs/PROMPT_REPLACEMENT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/SOURCE_BASELINE.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4fbb8f91cf90195208366865736827f0421b4da8abca2837f86c4f2d8d39631c",
+    "target": ".baseline/docs/SOURCE_BASELINE.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/SOURCE_MANIFEST.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "de26dbb45b71b58c44d3342984c9f0e9283341923cc7c70b7d82317b6f3474de",
+    "target": ".baseline/docs/SOURCE_MANIFEST.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/UPLOAD_VERIFICATION_20260923.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2054da1eb88d9484772431db5eb706c1b03c10396047af8ced95624680d1b5b2",
+    "target": ".baseline/docs/UPLOAD_VERIFICATION_20260923.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERIFICATION.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "69b580412702c49ecfab60fe33c2d6416a81722945a8a21152c9d340f4db5b0e",
+    "target": ".baseline/docs/VERIFICATION.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_0.2.0.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "cd60ffe704e4037fe58482ce10e23edfd514e8948a4b2d5c4174280f1f9c16c4",
+    "target": ".baseline/docs/VERSION_0.2.0.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261103.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "36239fb86e328d888f320e14a16bfa0300231f89e8d89667eecb8d51863936ff",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261103.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261105.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "1fd2a0a77b5f0fc408ea6d10e28d652244ae2487de44ade48b122e06bf1da88c",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261105.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261106.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e27f60628b0a3c3d96b8a226a4dd8511f88da25923a640073f1605c4c04066bb",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261106.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261106_VIDEO_AUTH.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3acc41294ee9a7f2919351519667d0b73df81ff8b26ed68b7196bfab323eeed5",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261106_VIDEO_AUTH.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261107_IMAGE_REPLACEMENT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b74c30539b7c05a7255cc85ae042c84c0607220eabcb937fb1ed16b15ffecaa6",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261107_IMAGE_REPLACEMENT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261107_PROMPT_REPLACEMENT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ed8aa2b10226d4692b649f1e96efc7029dd0dbff1da3ba6e0fc4146390ff4c06",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261107_PROMPT_REPLACEMENT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261107_VIDEO_RUN.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d889c50a90be7c1059141c5008c4fc3633ae23b9d65fbc6397193ebbefb7172f",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261107_VIDEO_RUN.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VERSION_SNAPSHOT_20261109_CAPACITY_R3.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "229d21a376108b95f64060cd79c26f436c2c69b83df20e3cd902ec7a088a8315",
+    "target": ".baseline/docs/VERSION_SNAPSHOT_20261109_CAPACITY_R3.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_BATCH_CONCURRENCY_IMPLEMENTATION_REPORT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a970806e3566cfaeb75ca7248a72ce4d2b61c8501309bd9e7b32d222799c5010",
+    "target": ".baseline/docs/VIDEO_BATCH_CONCURRENCY_IMPLEMENTATION_REPORT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_BATCH_CONCURRENCY_PROPOSAL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "78541e5c8a8b4e8e6b6d97e0678db879887de48dd5df9eb3e4b5e27e9255aae3",
+    "target": ".baseline/docs/VIDEO_BATCH_CONCURRENCY_PROPOSAL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_BATCH_CONCURRENCY_RECHECK.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "75095207a993c4798451f51133c2d7df7d9c6aaa400a6fdfcbad44566f830b0b",
+    "target": ".baseline/docs/VIDEO_BATCH_CONCURRENCY_RECHECK.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_BATCH_CONCURRENCY_REVIEW.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3563f8914a9a466c25e823ee170f9505fbc36efa1609116c44867a7826f3d9b2",
+    "target": ".baseline/docs/VIDEO_BATCH_CONCURRENCY_REVIEW.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_BATCH_CONCURRENCY_TS1_HANDOFF.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "84335ab86be559e292fd6860dad7653eea4ad102969f38310b3081ae991f3856",
+    "target": ".baseline/docs/VIDEO_BATCH_CONCURRENCY_TS1_HANDOFF.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_CAPACITY_POLICY.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "5969d09e1648832e049f353e73fe8104ffc44892c3ef6fe5b2ea83f14681a10b",
+    "target": ".baseline/docs/VIDEO_CAPACITY_POLICY.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_EXECUTE.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2470efe7f1a3c77c88080b625e3f7e79d03bc19a5ea52baf819498d2fc1abd1d",
+    "target": ".baseline/docs/VIDEO_EXECUTE.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_UNKNOWN_RETRY.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3140ab2e6d38806c1fa14cf39d8588efeda5d2e593bbf8ecafbf7ad678e8b49c",
+    "target": ".baseline/docs/VIDEO_UNKNOWN_RETRY.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "docs/VIDEO_UNKNOWN_RETRY_IMPLEMENTATION_REPORT.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "11677c376333d779b7884d9c5f93bd6d9eafe8d8d431b1393cbfc91a785320ed",
+    "target": ".baseline/docs/VIDEO_UNKNOWN_RETRY_IMPLEMENTATION_REPORT.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/finished.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "258f83f6a2afdfe4a3a814219aa4809cbeebe50d82d01cec5e5ed20cd66db520",
+    "target": ".baseline/examples/finished.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/image-batch.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "5beb6d89ccef9e0227eb2a58aee486902bec6e16e3a24eb8b669435c9d6641c3",
+    "target": ".baseline/examples/image-batch.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/image-provider.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "26315078340b1b096f3b7a4dd6a3f0a626dc7aaf086d8009a181fb7ac9985a6c",
+    "target": ".baseline/examples/image-provider.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/references.draft.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "5b4fca371361b3b75a30760c8ef56afafde28d4e44435a2c81face739280d67f",
+    "target": ".baseline/examples/references.draft.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/references.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fc1c60f528fd19c6c562612f6879e7d7fb1d830060308e7b233326461d35900b",
+    "target": ".baseline/examples/references.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/script.draft.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "1d9a48d2c71526d56bda2757a1d885b5d41edaa787b24adc7e67a6d13cf68505",
+    "target": ".baseline/examples/script.draft.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "examples/script.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3961209920b8e85d383cd0f6be636706f37190a4a5fb71d2bfd132ac626385f9",
+    "target": ".baseline/examples/script.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "package-lock.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "efe040222c2800e33298ff7155cc5cd9afab969595c9b84d6b83f56d9d9f422a",
+    "target": ".baseline/package-lock.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "package.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "04ea6aa952ab7875702dd25746b43d149075017d7cebd360b037a503c482bb46",
+    "target": ".baseline/package.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/connect-image-local.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7845c1cf35b781d4370b17ccb03ef379ee762f3a150511acfc97fc5149252f48",
+    "target": ".baseline/scripts/connect-image-local.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/connect-local.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "347ebe941da78dd6453be43e57524ca97e122508324124d88b928a5ac08f370f",
+    "target": ".baseline/scripts/connect-local.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/context-ir-process-review.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7ab2e8cbb524b907d3cb72d55c82bc50437ee62fc5dfc93a30de66e4414a9437",
+    "target": ".baseline/scripts/context-ir-process-review.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/context-ir-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "61d8d76e15824cacfc32e0646db92d10e62b9cdeea9920701574807d749358fc",
+    "target": ".baseline/scripts/context-ir-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/context-ir-process-worker.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "308619c3b8af4240069793f5cc012fa7e3594626b5dfc19350a45b0e50e96385",
+    "target": ".baseline/scripts/context-ir-process-worker.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/image-api-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "6f8d8469650119b88e3f7c6d6eacc74dfe358bade5c79d6c39a2a8290164aa40",
+    "target": ".baseline/scripts/image-api-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/image-workflow-benchmark.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4973b84f57401ef770880a200e80848058dee56ed563f5d869e5597187d18d82",
+    "target": ".baseline/scripts/image-workflow-benchmark.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/image-workflow-fixture.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "be16b97413e5a89d1b513b956f54cd44641066158bb12a9fcd8eec8cd680d2c7",
+    "target": ".baseline/scripts/image-workflow-fixture.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/image-workflow-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "65f5a8f87d8b81272f03f748af196665a2de8cbdfdfdbdce00383ca7ea611dfc",
+    "target": ".baseline/scripts/image-workflow-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/isolation-baseline.ps1",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "06107039bc005e085f5baaf3cf889ca9132fa44ac702c3df81d83a68e794cdff",
+    "target": ".baseline/scripts/isolation-baseline.ps1",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/lock-concurrency-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ef344f2e15918969845d57ef21bd2e30aa25c192a602a0b820e19143b45d3781",
+    "target": ".baseline/scripts/lock-concurrency-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/package-smoke.ps1",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b8482be61056166ece1c5c7019ebcf0f4af6b5f55178bf158a8bc4360bf34b44",
+    "target": ".baseline/scripts/package-smoke.ps1",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3a9d0169b8dd7b098994b606e3b14aaf4ca1b62a6c8f78dca6a6f24264cec4e2",
+    "target": ".baseline/scripts/process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/process-worker.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8b606cb5a75c017f5b1c4080c59ca0cdf645ecc35000e63dcfbef32f1e4b2977",
+    "target": ".baseline/scripts/process-worker.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/project-isolation-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "66239833bd59933b1846ca65320b2bc584ccf81de69e43859b148014703ee17c",
+    "target": ".baseline/scripts/project-isolation-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/prompt-replacement-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "992d6dc88b5f22ad5b0af3bf810c057221667e605496449d5e999a7c20104064",
+    "target": ".baseline/scripts/prompt-replacement-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/prompt-replacement-test-guard.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8180957d8bfe13f4812c68f6692efa9ed266595040738ae6d0f7b1ef6c30058e",
+    "target": ".baseline/scripts/prompt-replacement-test-guard.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-batch-process-fixture.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "76c558f9a23fa91f0b8206925a1cd82e8037a056b6788f2f121ac0f37340d44b",
+    "target": ".baseline/scripts/video-batch-process-fixture.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-batch-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "41f8f852be851598e255329f5d9e132be271f4d532453d0286510016e4a6b922",
+    "target": ".baseline/scripts/video-batch-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-batch-process-worker.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "558082c834d7ccef7440eca433e1e51076d7a6d6ef8fd75eb5d8e73fc37b9409",
+    "target": ".baseline/scripts/video-batch-process-worker.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-capacity-benchmark.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e5886bd78e81563d4f8c7c4990dc02876678992997abd4cfdefb0b4a8ea18c41",
+    "target": ".baseline/scripts/video-capacity-benchmark.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-capacity-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "71742063d8c9f5e257c29d14296c0fb919ceaa3f8bd90df104c855c6f7962bb4",
+    "target": ".baseline/scripts/video-capacity-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-execute-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "dd2041709cf82d52d9feadd241bc448cf3084bc03b05c0c53382a756b4fb10aa",
+    "target": ".baseline/scripts/video-execute-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-retry-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "832cb1b91bd91b38404eeda0506149d4a132e7a2f6579788ecd9f57bae3a622e",
+    "target": ".baseline/scripts/video-retry-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-retry-process-worker.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0a3dc51957a078538ac98841a7b266da32123ce8e7ca2343f0b97d1d61c74feb",
+    "target": ".baseline/scripts/video-retry-process-worker.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-run-process-smoke.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f39c99550cc0dada20471c6f2ec7f4c52d93d07bfef8499fb24e3f3a5feded9b",
+    "target": ".baseline/scripts/video-run-process-smoke.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "scripts/video-run-test-guard.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3435cb0b3f9a3d1f3bc24f12c3089f06039227f9662a712c2c663f015f2fc26c",
+    "target": ".baseline/scripts/video-run-test-guard.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-prompt-engine/SKILL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8b6638a61fa7dcd49c409ae2bc56555f96334a60fb09061536b25a0fbf88d9e0",
+    "target": ".baseline/skills/metasocli-prompt-engine/SKILL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/SKILL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f5cba627849a353461e64926eb520de23cce4a1bbd24ab6f44e03da04d693be8",
+    "target": ".baseline/skills/metasocli-reference-images/SKILL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/character-board.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b92a3b0324764828341176961d8ddfb330f8c54a2519e379529e4cf7e5d7b45c",
+    "target": ".baseline/skills/metasocli-reference-images/references/character-board.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/denoise-policy.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0ec4cb4b26f2feab187ad9805e7564c742cf1a415cc42aa2171566c258db9474",
+    "target": ".baseline/skills/metasocli-reference-images/references/denoise-policy.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/denoise/character.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fa0c6628aca1e371ffa5bf80657c3b46f14c065f4ba2683e68227d50b4145b71",
+    "target": ".baseline/skills/metasocli-reference-images/references/denoise/character.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/denoise/manifest.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "67769c09ed7446d7a86d1c8f0d0bebfc1f19f9314760b25973000bd614b2b040",
+    "target": ".baseline/skills/metasocli-reference-images/references/denoise/manifest.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/denoise/prop.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b334ee91c91ba678fde1a06c5520ac725e845964039e2093ec2568684ca505ac",
+    "target": ".baseline/skills/metasocli-reference-images/references/denoise/prop.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/denoise/scene.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "455836fe6522f6663028fbac36009d4d360dae04492a52a4ab1dad0a625199c2",
+    "target": ".baseline/skills/metasocli-reference-images/references/denoise/scene.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/first-frame.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "574404c448edcf7d2ae3ac9f139c786f0d33f21e1532c305b63d30adc6f18fcd",
+    "target": ".baseline/skills/metasocli-reference-images/references/first-frame.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/handoff-contract.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7cfd14db99a54ff0101992bd62871c1bdf252951a16b0cc1201b8954470221fa",
+    "target": ".baseline/skills/metasocli-reference-images/references/handoff-contract.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/image-workflow.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "461cced54420169e1b201dd645ee6702ae360d99d19bfb40ba6726f31f465a60",
+    "target": ".baseline/skills/metasocli-reference-images/references/image-workflow.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/prop-board.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "32ada69ef2dd4394d9f6a617ca91196af98ede1db2aa252170a951aedfb2f352",
+    "target": ".baseline/skills/metasocli-reference-images/references/prop-board.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/scene-board.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b96cddd57ce70e5fae3e921e490ad8dc840ac4ef764e16713eb31bc3beaf4505",
+    "target": ".baseline/skills/metasocli-reference-images/references/scene-board.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/selected-local-image.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fd079a873318265fd368fcb3ee269dca1521f4fb5bdf3953617be65eb753d0f5",
+    "target": ".baseline/skills/metasocli-reference-images/references/selected-local-image.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/references/shared-visual-policy.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f29dd8a738309c1c1549b6565ba22f7f56c5f18f25891ebb962d6c491e359109",
+    "target": ".baseline/skills/metasocli-reference-images/references/shared-visual-policy.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/scripts/append_asset_denoise.py",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "cc168c51592cb6e39bef910021a1eda417c27942a3194d7c66fa08e5e407ee37",
+    "target": ".baseline/skills/metasocli-reference-images/scripts/append_asset_denoise.py",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-reference-images/scripts/validate_handoff.py",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "73b2a96bcc41a385dc0362d5d7ed25717e64d70e0104c5a430336ace0a540b70",
+    "target": ".baseline/skills/metasocli-reference-images/scripts/validate_handoff.py",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-video-prompts-旁白/SKILL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8a0ec002f44397507037d7f1db1cf853cebd88edd88527d939c99dd173b65057",
+    "target": ".baseline/skills/metasocli-video-prompts-旁白/SKILL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli-video-prompts/SKILL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f149b1060324e8c5ef757b718b53e84678e0d6f71d53fc194d53d0a7a9f46738",
+    "target": ".baseline/skills/metasocli-video-prompts/SKILL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasocli/SKILL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d877b7150422ad9ad377b71533e14558d141c80d83b38fef8fb6b4870f9d80c4",
+    "target": ".baseline/skills/metasocli/SKILL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasoclitk/SKILL.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "09c5ee6126d4feb0f4584a707c0f3120766b596d5adef058b13677926fccaaba",
+    "target": ".baseline/skills/metasoclitk/SKILL.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasoclitk/agents/openai.yaml",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f85c90d3ec563305a71d8759e5e74b818040c15389cdc21861fc09e4eca4019a",
+    "target": ".baseline/skills/metasoclitk/agents/openai.yaml",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasoclitk/references/character-board.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "71f8219d01c5286f249b5d20feae4d09f843bc908fb35ff627f7e28523c21b34",
+    "target": ".baseline/skills/metasoclitk/references/character-board.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasoclitk/references/prop-board.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ebb0bc76d4815ce412ad17fab45447fcd4c92ac90ccc0385d448b8b932567458",
+    "target": ".baseline/skills/metasoclitk/references/prop-board.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasoclitk/references/scene-board.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4fac9ad88bb9eaa8d1ceb817b024e9225ac5422cbfae44061eb6c76406d074b7",
+    "target": ".baseline/skills/metasoclitk/references/scene-board.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "skills/metasoclitk/references/visual-style.md",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d464e6fa645a8db8a01694ec58eeb07357ec911fd5ad8aa6660d3be2cde32ccb",
+    "target": ".baseline/skills/metasoclitk/references/visual-style.md",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/assets/audio.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "66b1c472bfce88ea9ed9405d2f4ca892cb5ed724d196b043eb3c83b51123a336",
+    "target": ".baseline/src/assets/audio.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/assets/image.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "302e3bbe03352c88879d0c1032704789aa04a90b6234c7b53887e3d16397857d",
+    "target": ".baseline/src/assets/image.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/assets/registry.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "090739d91459ab2471b6ea3ff728355dbed1867bc047d4c0dbfe24c8d2bebb6e",
+    "target": ".baseline/src/assets/registry.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/cli/main.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2a0d6d3dddfd587e90c20c806dec659ad15a4896274089640edfe769d26788e9",
+    "target": ".baseline/src/cli/main.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/batch.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9118bc711ad2b40bd09389c98d45553f48e0ea866ab4fb059d2a5ff5d76b93d4",
+    "target": ".baseline/src/contracts/batch.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/context-ir.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0e0270624f6de99f3f2ec92c3435e65f0922d0c8f66d578d88d8b998661d86d6",
+    "target": ".baseline/src/contracts/context-ir.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/job.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "16ddb050978e6e2c4793509cc3eea096a05046caa35047f0e5d7b92fb3c40af1",
+    "target": ".baseline/src/contracts/job.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/plan.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "439b110a3842bea3c2143f65866cd21ae44acce125ef76c4a2b7b460245c2317",
+    "target": ".baseline/src/contracts/plan.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/prompt-replacement.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "1ee7d65a72fc67c5a9472a52976b67be2ee9495376dd30f520b8cced52fb15c2",
+    "target": ".baseline/src/contracts/prompt-replacement.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/story.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "1a56293ca4d6d9505b163dab992b3e6a8bbfe5d230966edf86d54075d633ed1f",
+    "target": ".baseline/src/contracts/story.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/task.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a619f43116ddb980788beb6ab6a6c47334fadce65ce9f319d5028b5c51ec9222",
+    "target": ".baseline/src/contracts/task.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/video-retry.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e46ec11bfb3aa0471e4bef65ac276a57ec85762c9e37a83a851aefb9f161127c",
+    "target": ".baseline/src/contracts/video-retry.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/contracts/video-run.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9561d176bb1d2a7f12c5c12dee26b28a28670b0d4aeba773a8340d25241fe5b6",
+    "target": ".baseline/src/contracts/video-run.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/core/errors.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "5270faa296f29cbf64193ac0995a2510a2c212c849a09c7fecccd89bfe818077",
+    "target": ".baseline/src/core/errors.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/core/index.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "392da2a656f10b30e7219680a33cd0cc8e6f2238ffac7a4fd3b5019bcbe83cf6",
+    "target": ".baseline/src/core/index.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/core/planning.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f6d09221333887b9f11df13135582f804952c34108ff861484d5bf89da41dc20",
+    "target": ".baseline/src/core/planning.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/core/project.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "390c607308492ea98e92158a3015945fb27d6d295370be8e8c5e40a59ad3d6ea",
+    "target": ".baseline/src/core/project.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/core/prompt-replacement.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "aa36f5a72e71fd911169889a6652158220011b7281ef2214eb552977b8f61196",
+    "target": ".baseline/src/core/prompt-replacement.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/client.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8562289afb25534bb4bba728642879b7e2d9e0847b4cfad449a9c75e144251a5",
+    "target": ".baseline/src/images/client.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/contracts.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "6eb04787975abd0409332dbf30073e8db3359426d866108dbfcd36dbf96f3325",
+    "target": ".baseline/src/images/contracts.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/coordinator.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d81041e34d4dc0b0e4332d4969de600372f625af164eb2b7d16bd0868cbea3d1",
+    "target": ".baseline/src/images/coordinator.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/credentials.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7cd752ea4cc3dba9c119b7e0126b529c17e25274ca4fe2b360f63c90e7909d96",
+    "target": ".baseline/src/images/credentials.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/handoff.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d8cac0650f50e1c0485092db04b4f368385e197d91b719e64ceb622295591758",
+    "target": ".baseline/src/images/handoff.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/phase.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "53b5288d6bd5da43745281ae8081acb2a1d906ee5fd9b2136ca4f3969b01fef5",
+    "target": ".baseline/src/images/phase.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/planning.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "61ce40732653544594f8008d742c7e04cc9db2e5460b45acbe75c93ebebda302",
+    "target": ".baseline/src/images/planning.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/preparation.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b2de749712db5f5148d0852b929c6717ac1de7afc662729dbd8c4f6192251b44",
+    "target": ".baseline/src/images/preparation.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/reporting.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "67932f6d32a915ca7cc0309cc5dd3a8e673006de9d8f1a75a25f4563d436cce5",
+    "target": ".baseline/src/images/reporting.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/result.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c27c4b3dac55e39e92983ddfcfeb4da3e2f2e31531afaeba203b94cddd2a21a4",
+    "target": ".baseline/src/images/result.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/run.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d68ee723ed185bab75e2ed4c2069f0eda785a0fc6a3fb42dd59ecb4010b43c0a",
+    "target": ".baseline/src/images/run.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/store.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0f4345a37f3abd8673fff7f1650676a5d1e7392f2957194a9aa25f2ef42dd202",
+    "target": ".baseline/src/images/store.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/stream.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0484c1a05b23c2937922ecfa25ab77b89037006c4f37242b279d1626e165370e",
+    "target": ".baseline/src/images/stream.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/transport.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c1d2d42a443f3bb83a9fe9936d3c3f83bd8e8b226f6f13fe187302ddb1488329",
+    "target": ".baseline/src/images/transport.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/workflow-contracts.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "decf56bfb02aa9fe2238c4a98ecf09b0723b256714d4533b6d8d92c6828fea71",
+    "target": ".baseline/src/images/workflow-contracts.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/images/workflow-timing.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "532b9f8d7754741c36d4fc87b24d379791e14a7f33bf31272d73f6e76857e5ef",
+    "target": ".baseline/src/images/workflow-timing.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/batch-evidence.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ef4f6b772cc84cec5a409fd47ba86c8689f83bae213c2f9dc55cc8828f3c81fb",
+    "target": ".baseline/src/jobs/batch-evidence.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/batch-retry.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e9e4f2bf8c7ca342a0e774f150783552ba05fcb9df320c05cf1b0adbf64fc7dd",
+    "target": ".baseline/src/jobs/batch-retry.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/batch-store.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "6eb3d31727c5723f7a09ed948ea9f3199d892c1be3c58d35b239b4b8a8bb55a9",
+    "target": ".baseline/src/jobs/batch-store.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/batch.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4da5382b1c7c04909e73b565fb68e55019c7da6602ad50846d2b414516deeda6",
+    "target": ".baseline/src/jobs/batch.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/capacity-events.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8696a72992b4e6bf25da18011573717e151670d6b309c7b446ece375a6066d9b",
+    "target": ".baseline/src/jobs/capacity-events.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/capacity-policy.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fc21724c8ed84823dd8dc8183ef3aa3a5dee86a48ed8e526997605695c7c1fea",
+    "target": ".baseline/src/jobs/capacity-policy.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/context-ir-store.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a0383836c0b6b009c0023a1a4b149762b70f0eb45b63cd157ec03964bd99d0e3",
+    "target": ".baseline/src/jobs/context-ir-store.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/context-ir.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "939795a833935bff76fc2c6d9e2235345d9d96e9ba1a3d91a9c391803439d476",
+    "target": ".baseline/src/jobs/context-ir.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/coordinator.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "baa53f55ad58e60733eaf299fc16e2f2d5d486e20ba42df058d39d82788e8eb5",
+    "target": ".baseline/src/jobs/coordinator.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/resume.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a3e3f6b46720714c51c3200c10ab3c4f9fafdcb2530279a72697bbe1ec886dad",
+    "target": ".baseline/src/jobs/resume.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/store.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e31481c7c4612e6b815e1c32c417d6ef4943d5b943f9f4dd8ea7b2e106b4f011",
+    "target": ".baseline/src/jobs/store.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/submission-guard.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b3df73486d308d33ba1051a05caf26b6917e864f6df4208c5f9c7c221150ad72",
+    "target": ".baseline/src/jobs/submission-guard.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/submission-owner.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8996dccd76edf11d4e9c196db13d6dd8a8cfcf9c6c93aa8ed35aca46f08df988",
+    "target": ".baseline/src/jobs/submission-owner.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/submit.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "5eda034a7df2758863e3cbddbdfadf745cf0fac82c28f51f9c483a6e9da733a0",
+    "target": ".baseline/src/jobs/submit.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/video-av.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3ceb9f1f3ebf0dd6f2645764e36549809872e9b1e6415bbfbc5347ec61f3cb39",
+    "target": ".baseline/src/jobs/video-av.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/video-retry.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c865eea800ea8f708bdfffb589e7875b05b52ab45dfc490c4c9d96fe57dc0fe0",
+    "target": ".baseline/src/jobs/video-retry.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/video-run.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e4581a07e925df405fc09d77b538f75b88845d76d03616230028a43cdcb7d9cb",
+    "target": ".baseline/src/jobs/video-run.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/video-scope.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b2b443a790ef86d8d951bdf31e34623307de77f7811221c703f5f327ecf06d1c",
+    "target": ".baseline/src/jobs/video-scope.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/video-workflow.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4f201b6ab06b86b35b552169b49cc258b17cb9a4e2fd0e38d16659a0d480e2fa",
+    "target": ".baseline/src/jobs/video-workflow.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/jobs/video.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a007ba3f868a74b3f3ea4379ff4c3530488d6ba539c1c5919bb6a21506201e07",
+    "target": ".baseline/src/jobs/video.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/metaso/client.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "01e45eaf62c2775667ac648b27819d0d8bb6865814265ce9668e17a9a59089e4",
+    "target": ".baseline/src/metaso/client.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/metaso/context-ir.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "28935ba20d8ab9aedb49edbda10f50857cc18cb3df51a87c091261764c31d6a5",
+    "target": ".baseline/src/metaso/context-ir.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/metaso/credentials.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "692060cf4e2713df64dd4bc2e10d61ca213be7eabc26ab8778683d240b5f4ace",
+    "target": ".baseline/src/metaso/credentials.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/metaso/h3.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "36f7ada47c563cb29e68ffbc9c99753fa8b2d00fc0ab6c4b8cc0607d6b20411d",
+    "target": ".baseline/src/metaso/h3.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/metaso/transport.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "000157ac2bce84ca0762766d16a5259e64beaf3def1808efdc9e5a9a9873a43b",
+    "target": ".baseline/src/metaso/transport.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/storage/canonical.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "aa4e6d2f3e788c72f4984f37f2b6a42e5703d9db552ec6514150b2923fb2886d",
+    "target": ".baseline/src/storage/canonical.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/storage/file-identity.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "070165417acc0c0bde0b8fe2945e6f7235162f011fa4d6dd65371292c43e4efe",
+    "target": ".baseline/src/storage/file-identity.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/storage/io.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4f5414356efc4e4339c0942f4512e205407755a497cc336dd87f4db9efeeb995",
+    "target": ".baseline/src/storage/io.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/storage/locking.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "867db038e8f267fdcb8094dd00b1cec6833315a2a6e92f3b7b3b6f664653c27c",
+    "target": ".baseline/src/storage/locking.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/storage/paths.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8c028f0ecefb99852feb438dfea5da88e4d0123555ef0fe4c51d76fed9c22e1f",
+    "target": ".baseline/src/storage/paths.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/story/duration.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7cdbfee74205a35e3f8fb6807fb21d55641acf2e179e3e222acc6410564f4846",
+    "target": ".baseline/src/story/duration.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/story/narration.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "23869ba9075a0d3b2544fd3ee55bfe42dbf59bae42c022c5f116b2d3634dd723",
+    "target": ".baseline/src/story/narration.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "src/story/text.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2abb11f8774fde498402b3ab600e3beca6fa22e5d8f5ed7ca0155b5d5da8c835",
+    "target": ".baseline/src/story/text.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/asset-replacement.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3b6bac8d19371a5c2ccd9d08b236be5687048e8841b4f635a7545faeb3e38b78",
+    "target": ".baseline/tests/asset-replacement.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/audio-fixtures.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c07ecd3975faf7d4886a05707de927d59137c2c377be4b16b7ad2fe388be3471",
+    "target": ".baseline/tests/audio-fixtures.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/audio.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "dfca742991034c1351c09e11a20e4fa00e99cc63514937840869ddb8e5e44d72",
+    "target": ".baseline/tests/audio.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/batch-helpers.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "72b244ba1443898ae56dcb24420f438f25d14939eed8a07549ba27917be0bb59",
+    "target": ".baseline/tests/batch-helpers.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/batch-known-failure-retry.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7379c0999badb10f0a14f74f1829e606fa4ff532ec81a83bde5d304381688ec3",
+    "target": ".baseline/tests/batch-known-failure-retry.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/canonical.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c205f3a25465168e8905637926c7deb099e23cd9b92960b5d722980962c989e5",
+    "target": ".baseline/tests/canonical.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/capacity-auto-release.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "00e36681dfd004d56915617bd7050ab03bde65ceba67dc190a7ae790274ce93a",
+    "target": ".baseline/tests/capacity-auto-release.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/capacity-dispatch.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e2890dfb30f2651c3f9aeae8e305980d1ee3dd479333d455415761bd9ee663e3",
+    "target": ".baseline/tests/capacity-dispatch.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/cli.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "01d205ec9964c94062723f9d54705487ef3bcf64dfe73ff9840850e784c8bfb3",
+    "target": ".baseline/tests/cli.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/client.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4a7e0125d5133233936da5b09c901ecc2f9cb8e7082f9298208766b803f8d130",
+    "target": ".baseline/tests/client.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/context-ir-contract.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c21fcddb90c1a46d88a0d949ed3260096525371bf1fa60bc064ab7bfc50bdf75",
+    "target": ".baseline/tests/context-ir-contract.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/context-ir-fixtures.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fbd87487dea69cecd9373a1efbb8f09d12573b40d237134feeb8db64f6ac2018",
+    "target": ".baseline/tests/context-ir-fixtures.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/context-ir-legacy.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "e79e26248dafd783d87b0ef1a2f6027bfcebbe8699984d8307ce03bb13084c3a",
+    "target": ".baseline/tests/context-ir-legacy.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/context-ir-recovery.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "92b356f1ba185a59fe35d79e7bb3983a841f875aed3f3cb2bbbbc9995e1b2b33",
+    "target": ".baseline/tests/context-ir-recovery.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/context-ir-reuse.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "62aff5cd9e3b6b2be3caa1af568f717a50b444a84d420bff7bb9b9788e090e0b",
+    "target": ".baseline/tests/context-ir-reuse.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/context-ir.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "557426ec1f14c8c20a09beb54a55183e05c68cac5c16ef869a7fc7500f0756b6",
+    "target": ".baseline/tests/context-ir.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/coordinator-boundaries.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "80b1ca6e2400a19a08cec6faa43012d027ca559944761f3fb29d933a31e4e387",
+    "target": ".baseline/tests/coordinator-boundaries.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/credentials.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "65899fde33870df444041c50faccccec6e98de27e53ba1564c0ddb71f0351e62",
+    "target": ".baseline/tests/credentials.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/cross-project-ack.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d63ea2fe521167077b342a42e0796bd00e21bbc7971fd20196d82619eeaacf2c",
+    "target": ".baseline/tests/cross-project-ack.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/duration.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d87501eced9e4eccbc931bfa3dd6c4eb9c4387116379cf79567de53fd6a44c70",
+    "target": ".baseline/tests/duration.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/capture.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9e1a8c45f67d839ba757f128d927b276fe772b3f5644da0fe64e860d7de05902",
+    "target": ".baseline/tests/fixtures/pre-context-ir/capture.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/assets/narrator/78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f.wav",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/assets/narrator/78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f.wav",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/manifest.yaml",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c3d605df89c4a7516d35198f5c9f38906534a978774fa3539c1c6c074fb10e88",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/manifest.yaml",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/state/jobs/04404fd4-49d0-4a85-b864-709653c94244.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fff826d8b63a6da10d76dfd6f82a5f33e9b66b0a109bf51168e09b41ce84dc09",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/state/jobs/04404fd4-49d0-4a85-b864-709653c94244.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/state/plans/9de1f3f8-e638-4f9a-bc2d-05203c4c2748.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "c5ae64e080c9cfdd84e156d8b8280cd579c2de70b5761d84fe9f03036c85b4f7",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/state/plans/9de1f3f8-e638-4f9a-bc2d-05203c4c2748.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/state/receipts/04404fd4-49d0-4a85-b864-709653c94244-evidence-42b257a3-4f9b-4a29-87fb-c178ca7f6068.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9b5839ebd1910f3897d573941e539e9d6c145f691429e93c3275db48a58c632e",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/state/receipts/04404fd4-49d0-4a85-b864-709653c94244-evidence-42b257a3-4f9b-4a29-87fb-c178ca7f6068.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/state/receipts/04404fd4-49d0-4a85-b864-709653c94244.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a3b8635c5799bc24b97d60a972734a7cc603cd21871949267423aedb03a15ad4",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/state/receipts/04404fd4-49d0-4a85-b864-709653c94244.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/state/sources/9f860203c5e6a57b2d16c82166b5f314ee7881bbbe5f66f571fc3a6ef988f6f0.bin",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9f860203c5e6a57b2d16c82166b5f314ee7881bbbe5f66f571fc3a6ef988f6f0",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/state/sources/9f860203c5e6a57b2d16c82166b5f314ee7881bbbe5f66f571fc3a6ef988f6f0.bin",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/narration/state/sources/9f860203c5e6a57b2d16c82166b5f314ee7881bbbe5f66f571fc3a6ef988f6f0.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9f860203c5e6a57b2d16c82166b5f314ee7881bbbe5f66f571fc3a6ef988f6f0",
+    "target": ".baseline/tests/fixtures/pre-context-ir/narration/state/sources/9f860203c5e6a57b2d16c82166b5f314ee7881bbbe5f66f571fc3a6ef988f6f0.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/manifest.yaml",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "09b02cd48ab4123209660884bca3b913ea225a611275c3fbae4e4be4c9bbae48",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/manifest.yaml",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/state/jobs/e143e99e-c06c-40d4-af8c-07f4dd553b5f.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4d18aadca5ba124468ffee0884e07232cce9a71e84bea85217bf2f3845a01674",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/state/jobs/e143e99e-c06c-40d4-af8c-07f4dd553b5f.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/state/plans/b711b04b-3c84-47bd-8aab-ba1fdc47ffe5.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "acc60d58bc08bc3d0dfffa255bf860313b10ba955da6649020c54e1fcda7ada3",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/state/plans/b711b04b-3c84-47bd-8aab-ba1fdc47ffe5.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/state/receipts/e143e99e-c06c-40d4-af8c-07f4dd553b5f-evidence-aba1532d-bb2a-421e-8007-60b99a82e521.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "9b5839ebd1910f3897d573941e539e9d6c145f691429e93c3275db48a58c632e",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/state/receipts/e143e99e-c06c-40d4-af8c-07f4dd553b5f-evidence-aba1532d-bb2a-421e-8007-60b99a82e521.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/state/receipts/e143e99e-c06c-40d4-af8c-07f4dd553b5f.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f5f87ecc674e8584bea55706bf332d5d56c0adc1acfe5e6f0086e4a9951e4eb3",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/state/receipts/e143e99e-c06c-40d4-af8c-07f4dd553b5f.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/state/sources/045bc567b11d4f7881f3681902b896acea3bfd05544ba03dfe87d40642e9bf10.bin",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "045bc567b11d4f7881f3681902b896acea3bfd05544ba03dfe87d40642e9bf10",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/state/sources/045bc567b11d4f7881f3681902b896acea3bfd05544ba03dfe87d40642e9bf10.bin",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/fixtures/pre-context-ir/normal/state/sources/045bc567b11d4f7881f3681902b896acea3bfd05544ba03dfe87d40642e9bf10.txt",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "045bc567b11d4f7881f3681902b896acea3bfd05544ba03dfe87d40642e9bf10",
+    "target": ".baseline/tests/fixtures/pre-context-ir/normal/state/sources/045bc567b11d4f7881f3681902b896acea3bfd05544ba03dfe87d40642e9bf10.txt",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/helpers.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "bc13094c58f84bf2284bfd2b97025a91f927878c26a23505c5b397a4d7977812",
+    "target": ".baseline/tests/helpers.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-2k-landscape.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "3023cb27a190a097e688546f990efe920f36387af4d3beb3c2a3b2b51ab408f5",
+    "target": ".baseline/tests/image-2k-landscape.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-api-boundaries.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0a42418db5f381da2bee04ebba27c4098a59a7f5ff764e2079cc3f3f11d4520c",
+    "target": ".baseline/tests/image-api-boundaries.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-api-helpers.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a8edd7afe53cc240a500e9ed050ee8313df2130afda59afd63e211bc1b4f5bac",
+    "target": ".baseline/tests/image-api-helpers.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-api-http.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "cc8d4055a138de76d064507bab0825abfc84e6f7646f3bdc40e9aae20329e9a5",
+    "target": ".baseline/tests/image-api-http.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-api-restart.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2136af3d8c741d23203b4e4e74ac3e7cb4388b1adfc53473450388b97c767e82",
+    "target": ".baseline/tests/image-api-restart.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-api.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "009275d3cf2f02901e8d5c6f2be0a869f2a8e9882d3904d31ab33dc1b21dba08",
+    "target": ".baseline/tests/image-api.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-denoise-prompt.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "fd4798ea9c524d6014e6a6b0d61476c9dabda3c4c1bc19d232642af862b5cace",
+    "target": ".baseline/tests/image-denoise-prompt.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-existing-unknown-ack.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "6f21debbc8827eac56b90e4c66d443d1ebc3a497a6350aa67b18d0dc302891f3",
+    "target": ".baseline/tests/image-existing-unknown-ack.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-manual-selection-recovery.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "7950bc38db7f2a403661a812ffdc8a9c822115fc68392adb34fd720a30104e1a",
+    "target": ".baseline/tests/image-manual-selection-recovery.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-preparation-restart.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "88aaa228b28ba108b1cd52542ff4aef459d3fe157d7cc3bccbcfb8c176a08cb1",
+    "target": ".baseline/tests/image-preparation-restart.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-retry-ancestry.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "44a2a1db80f9710add97620565f6408dc8b0c7074d55356fab83367e8aeb1785",
+    "target": ".baseline/tests/image-retry-ancestry.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-transport.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "db463e5f2289e5b3e922ddca172fd6ce5b8601341e1f503e38283606ff4b0037",
+    "target": ".baseline/tests/image-transport.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-workflow-helpers.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ef014a94ac1349d7c7f2949e0df948d5824b2d3f2d516c3635e6f3479aa08326",
+    "target": ".baseline/tests/image-workflow-helpers.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-workflow-recovery.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ced7f72a9ce95f7bcf0671b5d9b7f1d2bc521309bb551cf18bb3d23eb4d105da",
+    "target": ".baseline/tests/image-workflow-recovery.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-workflow-review.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f477fdca3bf8afd42ec2a0790bc09f7cd633fed0c2d213b19a80682475ba4a6d",
+    "target": ".baseline/tests/image-workflow-review.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/image-workflow.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d039a79a946290dc5df6e6b3f375d1e1f5e1023e4bae475baf008dc09c506b1a",
+    "target": ".baseline/tests/image-workflow.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/inline-context-ir.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "1c64b3914d6399382c13c215f7f03c1eb1e79ad264f488c5c88f74ab6bcec412",
+    "target": ".baseline/tests/inline-context-ir.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/narration.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "a54e52d6f143c4a823556ea6d3a10a599b7495f6a3371e559bf087fa74a067d4",
+    "target": ".baseline/tests/narration.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/offline.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2081cf2a149f0e6e2ab3c162d70ae87a2cbf172b461522fc05dffe77f18080a2",
+    "target": ".baseline/tests/offline.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/planning.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0287555b456068d550f940291da0de6af9598c3fb380e4aa976e1507c328132f",
+    "target": ".baseline/tests/planning.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/project-isolation-compat.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "741dccf85f862e095ae8481d44c8b7c6c61cabbf92a860bb7c98d873a0d5f7b3",
+    "target": ".baseline/tests/project-isolation-compat.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/project-isolation-helpers.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "56f357864ba7523a0fbe01a4d0024a395215fe8d48574257a22fe2693a5b323a",
+    "target": ".baseline/tests/project-isolation-helpers.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/project-isolation-images.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "719909bbd0ff1367be9881db471e89a951edefda843fa7730994b79f26409d56",
+    "target": ".baseline/tests/project-isolation-images.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/project-isolation-video.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "07e8c37f12672cb856454b216d8c1a341d3d56df73a2d9798fedfdec9370a6d8",
+    "target": ".baseline/tests/project-isolation-video.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/prompt-replacement-cli.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "17b449ea6389f05cc3fe17a7177a9fe040cecb80f66b644d29fcd1477f5764aa",
+    "target": ".baseline/tests/prompt-replacement-cli.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/prompt-replacement-fixture.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "17d2cc2157713e1ca33210b92cfa7ff4b43ad6c31880dbb13644512c3981f8f2",
+    "target": ".baseline/tests/prompt-replacement-fixture.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/prompt-replacement.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "92ef4a8a8980728a5f46fd97842e0fe50bd542918b7c24b87e66548e4fa79a17",
+    "target": ".baseline/tests/prompt-replacement.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/recovery.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "f997929aa0876b492d1f3a8268b644e55222b7924b74c9030e951c2a29b1443b",
+    "target": ".baseline/tests/recovery.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/reference_image_skill_test.py",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "614cd86077000f44c72a95a49600b154e37c8f3c6d663c54d3342854e5ec6c08",
+    "target": ".baseline/tests/reference_image_skill_test.py",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/storage-concurrency.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b4469583ff1de6777df753feecad613e714b2666232ef6ed189b33b78dd28bbe",
+    "target": ".baseline/tests/storage-concurrency.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/storage-path-retry.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "72c90911dec60a49aa99fc5e81d54d2212a8986b8ecb367f524b14fe97d71769",
+    "target": ".baseline/tests/storage-path-retry.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/storage.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "b6e360ca54d263f01d8ce3beffe78c41e090915fe93a79722285dbea4de9c00f",
+    "target": ".baseline/tests/storage.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/story.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "4ce3d8863cad00465242fd34f105c9c1e913631abb8e50012167bd2e0f5c33ad",
+    "target": ".baseline/tests/story.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/submit.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "bad0f77ba9dbafe8a854b05928c63c33cd28896fb25bc510a95168dd19832053",
+    "target": ".baseline/tests/submit.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-batch-faults.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "ffc30584cf5d4bc9cc6cf9aa545e04f257f4808fcfe38ed00a443118b81fdb77",
+    "target": ".baseline/tests/video-batch-faults.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-batch.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "dfeece2fd395765ec5ff98342d8079a3269571472d9d2ae5f68cef29bbc96558",
+    "target": ".baseline/tests/video-batch.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-execute-regressions.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "d8604ee064aeba00652e6525587fd822342b77159cd8a85d1c8a872a3d308e6d",
+    "target": ".baseline/tests/video-execute-regressions.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-execute.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "37934350459430b1702cdc56cd3c08391bc8c4ff9265a8b1dbb10250495412e4",
+    "target": ".baseline/tests/video-execute.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-recovered-failure-retry.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "2bc61b0a87887e26649368557e6c13d18b0ad6d52edb3baa6059edd5afcc8fdc",
+    "target": ".baseline/tests/video-recovered-failure-retry.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-recovery-boundaries.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "8db39896761c589394bf9e4e364208958e3f69c3e7006345a957e3627803cbd4",
+    "target": ".baseline/tests/video-recovery-boundaries.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-run-cli.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "19a9e1e93ba62c88dc48ee1f15b582bdc2732bfb2bc4a0a7f64cbdc590760b19",
+    "target": ".baseline/tests/video-run-cli.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-run.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "0a67ed565e4712a990cf43d009a17b92a1225125209b5253bbc095eb42f63d53",
+    "target": ".baseline/tests/video-run.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tests/video-unknown-retry.test.ts",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "49b2952524e950a0dd59c796fc0a9c565e1d6856a801a33dd20d7bcc0b4c1129",
+    "target": ".baseline/tests/video-unknown-retry.test.ts",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "tsconfig.json",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "869aabda5de12b083984412809bfcb2b9c0fe3dc0c04673d81dc22693d9c593f",
+    "target": ".baseline/tsconfig.json",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  },
+  {
+    "source": "vitest.config.mjs",
+    "commit": "f4153c31c63d63c4ead8b2a470dbc5d31ad04d3c",
+    "sha256": "60d3dbac66c5e3c7c351bb8e896c9f2a4791a81b239551693b38497e5ed9a22e",
+    "target": ".baseline/vitest.config.mjs",
+    "reason": "Frozen reference for independent Python port and offline differential tests"
+  }
+]

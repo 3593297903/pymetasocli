@@ -1,0 +1,125 @@
+{
+  "additionalPostCount": 1,
+  "historicalGetCount": 4,
+  "selectedGetCount": 1,
+  "historicalDownloadCount": 0,
+  "maxParallelGet": 4,
+  "elapsedMs": 1240.6048999982886,
+  "terminalToRefillMs": 223.56010001385584,
+  "getRequests": [
+    {
+      "path": "/api/minimax/v2/query/video_generation/1",
+      "headers": {
+        "Host": "127.0.0.1:10073",
+        "Connection": "keep-alive",
+        "User-Agent": "python-httpx/0.28.1",
+        "Accept-Encoding": "identity",
+        "Authorization": "Bearer synthetic",
+        "Accept": "application/json"
+      },
+      "time": 270339.9296911
+    },
+    {
+      "path": "/api/minimax/v2/query/video_generation/2",
+      "headers": {
+        "Host": "127.0.0.1:10073",
+        "Connection": "keep-alive",
+        "User-Agent": "python-httpx/0.28.1",
+        "Accept-Encoding": "identity",
+        "Authorization": "Bearer synthetic",
+        "Accept": "application/json"
+      },
+      "time": 270339.9300023
+    },
+    {
+      "path": "/api/minimax/v2/query/video_generation/3",
+      "headers": {
+        "Host": "127.0.0.1:10073",
+        "Connection": "keep-alive",
+        "User-Agent": "python-httpx/0.28.1",
+        "Accept-Encoding": "identity",
+        "Authorization": "Bearer synthetic",
+        "Accept": "application/json"
+      },
+      "time": 270339.9302538
+    },
+    {
+      "path": "/api/minimax/v2/query/video_generation/4",
+      "headers": {
+        "Host": "127.0.0.1:10073",
+        "Connection": "keep-alive",
+        "User-Agent": "python-httpx/0.28.1",
+        "Accept-Encoding": "identity",
+        "Authorization": "Bearer synthetic",
+        "Accept": "application/json"
+      },
+      "time": 270339.9305392
+    },
+    {
+      "path": "/api/minimax/v2/query/video_generation/5",
+      "headers": {
+        "Host": "127.0.0.1:10073",
+        "Connection": "keep-alive",
+        "User-Agent": "python-httpx/0.28.1",
+        "Accept-Encoding": "identity",
+        "Authorization": "Bearer synthetic",
+        "Accept": "application/json"
+      },
+      "time": 270340.4786749
+    },
+    {
+      "path": "/video/5",
+      "headers": {
+        "Host": "127.0.0.1:10073",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "User-Agent": "python-httpx/0.28.1",
+        "Accept-Encoding": "identity"
+      },
+      "time": 270340.5362443
+    }
+  ],
+  "events": [
+    [
+      "create",
+      "1",
+      270339.098572
+    ],
+    [
+      "create",
+      "2",
+      270339.0995935
+    ],
+    [
+      "create",
+      "3",
+      270339.1007587
+    ],
+    [
+      "create",
+      "4",
+      270339.1008268
+    ],
+    [
+      "terminal",
+      "1",
+      270340.0299408
+    ],
+    [
+      "create",
+      "5",
+      270340.253505
+    ],
+    [
+      "terminal",
+      "5",
+      270340.4786822
+    ],
+    [
+      "download",
+      "5",
+      270340.6872415
+    ]
+  ],
+  "newPostStartedBeforeSlowHistoricalResponses": true
+}

@@ -1,0 +1,119 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.2.0, pluggy-1.7.0
+rootdir: E:\pymetaso
+configfile: pyproject.toml
+plugins: anyio-4.16.0, hypothesis-6.170.15, asyncio-1.5.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collected 3 items
+
+tests\test_independent_review.py FFF                                     [100%]
+
+================================== FAILURES ===================================
+______________ test_new_scope_refreshes_same_story_old_task_ids _______________
+
+tmp_path = WindowsPath('E:/pymetaso/.work/recovery-fix-20261113-2b10f1fa/test-before-authorized/test_new_scope_refreshes_same_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000027509F13BB0>
+
+    @pytest.mark.asyncio
+    async def test_new_scope_refreshes_same_story_old_task_ids(tmp_path, monkeypatch):
+        monkeypatch.setenv('METASOCLI_PY_TEST_LOOPBACK', '1')
+        root = text_story(tmp_path, 5)
+        def selection(ids):
+            return {'schemaVersion': 1, 'episodes': [{'episodeId': 'ep-1', 'segmentIds': ids}]}
+        first = prepare(root, selected=selection(['s1', 's2', 's3', 's4']))
+        next_plan = prepare(root, selected=selection(['s5']))
+        runtime = tmp_path/'runtime'
+        with FakeProvider() as fake:
+            provider = Metaso(Http(loopback_origin=fake.origin), 'synthetic-review')
+            try:
+                original = await run_video(root, first['batchId'], provider=provider, runtime=runtime,
+                    confirm=True, options=ExecutionOptions(submit_only=True))
+                assert all(s['status'] == 'queued' for s in original['segments'])
+                # The original process has stopped; remote IDs now return completed.
+                assert len(fake.tasks) == 4 and fake.query_status == 'completed'
+                result = await run_video(root, next_plan['batchId'], provider=provider, runtime=runtime,
+                    confirm=True, options=ExecutionOptions(max_polls=1, capacity_wait=.15, capacity_poll=.01))
+                observed = {'phase': result['phase'], 'newPostCount': len(fake.requests)-4,
+                    'queryPaths': [g['path'] for g in fake.gets],
+                    'held': sum(s['capacity']['state']=='held' for s in Capacity(runtime).read()['slots'].values())}
+>               assert result['phase'] == 'complete', observed
+E               AssertionError: {'phase': 'partial', 'newPostCount': 0, 'queryPaths': [], 'held': 4}
+E               assert 'partial' == 'complete'
+E                 
+E                 - complete
+E                 + partial
+
+tests\test_independent_review.py:41: AssertionError
+__________ test_explicit_retry_after_correcting_auth_can_submit_once __________
+
+tmp_path = WindowsPath('E:/pymetaso/.work/recovery-fix-20261113-2b10f1fa/test-before-authorized/test_explicit_retry_after_corr0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002750A0C6450>
+
+    @pytest.mark.asyncio
+    async def test_explicit_retry_after_correcting_auth_can_submit_once(tmp_path, monkeypatch):
+        monkeypatch.setenv('METASOCLI_PY_TEST_LOOPBACK', '1')
+        root = text_story(tmp_path, 1)
+        plan = prepare(root, ['ep-1'])
+        with FakeProvider() as fake:
+            provider = Metaso(Http(loopback_origin=fake.origin), 'synthetic-review')
+            actual_create = provider.create
+            async def reject(*args, **kwargs):
+                raise ProviderError('PROVIDER_HTTP', 'Provider returned HTTP 401.', status=401, rejected=True)
+            monkeypatch.setattr(provider, 'create', reject)
+            try:
+                result = await run_video(root, plan['batchId'], provider=provider, runtime=tmp_path/'runtime', confirm=True)
+                operation = result['segments'][0]['operationId']
+                assert result['segments'][0]['status'] == 'failed'
+                monkeypatch.setattr(provider, 'create', actual_create)
+                grant = authorize_retry(root, plan['batchId'], operation, True, False)
+                result = await run_video(root, plan['batchId'], provider=provider, runtime=tmp_path/'runtime', resume=True,
+                    options=ExecutionOptions(max_polls=1, capacity_wait=.15, capacity_poll=.01))
+>               assert result['phase'] == 'complete', {'phase':result['phase'], 'blocker':result.get('blocker'),
+                    'postCount':len(fake.requests), 'newOperationId':grant['newOperationId']}
+E                   AssertionError: {'phase': 'partial', 'blocker': {'code': 'PROVIDER_AUTHORIZATION', 'message': 'Provider authentication or quota rejected; no additional creates started.'}, 'postCount': 0, 'newOperationId': '1a4ffd4e-3299-468b-aea5-db1a071b2a1b'}
+E                   assert 'partial' == 'complete'
+E                     
+E                     - complete
+E                     + partial
+
+tests\test_independent_review.py:65: AssertionError
+_____________ test_image_quota_intent_window_has_durable_recovery _____________
+
+tmp_path = WindowsPath('E:/pymetaso/.work/recovery-fix-20261113-2b10f1fa/test-before-authorized/test_image_quota_intent_window0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002750A07B790>
+
+    @pytest.mark.asyncio
+    async def test_image_quota_intent_window_has_durable_recovery(tmp_path, monkeypatch):
+        monkeypatch.setenv('METASOCLI_PY_TEST_LOOPBACK', '1')
+        root = image_story(tmp_path, 1)
+        profile = {'firstFrameSize':'1920x1088', 'providerLimits':
+            {'concurrent':1, 'source':'synthetic offline review', 'checkedAt':'2026-11-13T00:00:00Z'}}
+        plan = iw.plan_images(root, assets=['asset-0'], profile=profile)
+        original_save = iw.save_job
+        class SimulatedCrash(BaseException):
+            pass
+        def fail_before_job_write(*args, **kwargs):
+            raise SimulatedCrash()
+        with FakeProvider() as fake:
+            provider = Yiciyuang(Http(loopback_origin=fake.origin), 'synthetic-review')
+            try:
+                monkeypatch.setattr(iw, 'save_job', fail_before_job_write)
+                with pytest.raises(SimulatedCrash):
+                    await iw.run_images(root, plan['planId'], provider=provider, runtime=tmp_path/'runtime', confirm=True)
+                monkeypatch.setattr(iw, 'save_job', original_save)
+                assert len(fake.requests) == 0 and iw.image_jobs(root) == []
+                result = await iw.run_images(root, plan['planId'], provider=provider, runtime=tmp_path/'runtime', resume=True,
+                    capacity_wait=.15, capacity_poll=.01)
+                ledger = read_json(tmp_path/'runtime/images/yiciyuang-default/ledger.json')
+>               assert result['complete'], {'complete':result['complete'], 'items':result['items'],
+                    'postCount':len(fake.requests), 'quotaStates':[j['status'] for j in ledger['jobs'].values()]}
+E                   AssertionError: {'complete': False, 'items': [{'assetId': 'asset-0', 'status': 'pending'}], 'postCount': 0, 'quotaStates': ['submitting']}
+E                   assert False
+
+tests\test_independent_review.py:95: AssertionError
+- generated xml file: E:\pymetaso\.work\recovery-fix-20261113-2b10f1fa\before-authorized.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_independent_review.py::test_new_scope_refreshes_same_story_old_task_ids
+FAILED tests/test_independent_review.py::test_explicit_retry_after_correcting_auth_can_submit_once
+FAILED tests/test_independent_review.py::test_image_quota_intent_window_has_durable_recovery
+============================== 3 failed in 4.29s ==============================

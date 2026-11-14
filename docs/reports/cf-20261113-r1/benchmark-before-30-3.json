@@ -1,0 +1,38 @@
+{
+  "variant": "before",
+  "count": 30,
+  "repeat": 3,
+  "scenario": "all-ready",
+  "firstSendMs": 1136.6806000005454,
+  "lastSendMs": 3189.3319999799132,
+  "totalMs": 8247.664999973495,
+  "resumeMs": 255.25240000570193,
+  "peakRssBytes": 77631488,
+  "loopLagP95Ms": 166.5119000338018,
+  "counts": {
+    "load_plan": 62,
+    "read_json": 539,
+    "prepared_proof": 60,
+    "repair_prepared": 30
+  },
+  "posts": 30,
+  "mappingAndFilesVerified": true,
+  "resumeAdditionalPosts": 0,
+  "allRequestsBeforeFirstResponse": true,
+  "lanes": {
+    "decode": {
+      "observedPeak": 2,
+      "aggregateWaitMs": 28452.03120005317
+    },
+    "download": {
+      "observedPeak": 0,
+      "aggregateWaitMs": 0.0
+    },
+    "registration": {
+      "observedPeak": 1,
+      "aggregateWaitMs": 52722.532899992075
+    }
+  },
+  "temporaryRoot": "E:\\pymetaso\\.work\\cf-04b13d50\\temp\\cf-bench-xr0fktyn",
+  "realProviderRequests": 0
+}

@@ -1,0 +1,338 @@
+{
+  "version": "0.1.0",
+  "newGitCommit": null,
+  "sourceBaselineFiles": 189,
+  "hashSnapshotPhase": "after gates and standard reports, before repair appendix and final archive rebuild",
+  "preEditBaselineChanges": 0,
+  "reviewTestsOnlyUnusedImportsRemoved": true,
+  "originalTestFilesByteIdentical": 12,
+  "originalScenarios": 76,
+  "pytest": {
+    "tests": 110,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "changedRegisteredFiles": [
+    {
+      "path": "src/metasocli_py/images/contracts.py",
+      "before": "13b9bbdfb968fdfe6b40e57f8147fffe7cf12af079d2b7f906193a36ba1136d7",
+      "after": "e3036b7d4e2c6e889f2f45d7465907ba407f8d009745e65b7fb1debb7e5fafba"
+    },
+    {
+      "path": "src/metasocli_py/images/workflow.py",
+      "before": "40344c90552e6a664fdd0cf0b9167e2b29091595d361066451d030b96b1ec307",
+      "after": "2e0a104bb1065fd0e99bff213bbce86c007ccc70617d68dc3596987625015d01"
+    },
+    {
+      "path": "src/metasocli_py/video/capacity.py",
+      "before": "44e32ab17f6f4fd67b0a11b9f9d1aeab1b6666449540ed68132e50ae94505a91",
+      "after": "b65f2b4dbbbd44c24196bfe87928f2cc4df0484bd3004163dfc35b57ad685880"
+    },
+    {
+      "path": "src/metasocli_py/video/execution.py",
+      "before": "39e90c758ac4b0801bf620673a30f7b37dfb49c3ae19061a4afbbacf1912418e",
+      "after": "7d87b42a69981871bb962bed10b050a4d197539b2ec0e6fd60c7bc61c0bd88e4"
+    },
+    {
+      "path": "tests/fake_http.py",
+      "before": "fd6910c808b65b77efcc4e6531040edafa5da4ef639a29e83ef60107779f3791",
+      "after": "bd4ecdc0d1682614d437b37b7cda2aa55c1be5ab09684d892aaab9b5346f9c0b"
+    },
+    {
+      "path": "tests/process_worker.py",
+      "before": "8a01addd86f632f4afaa40ebf5bfe33a06157272481d14f0eb55173f9e91e39e",
+      "after": "129f0ae01b679125e9dfb3f159e3ac2e688d7576633ae3b267b86cec394d1430"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "before": "3625481d3ba11b24f50a1441c28771f2a0d5ef672239727ec987e639ea314b28",
+      "after": "24009be7c73f54467461e809bc81f5eca24ce6eaed4204713fe7ee5df070701e"
+    },
+    {
+      "path": "docs/BEHAVIOR_CONTRACT.md",
+      "before": "c63be81d39db7769a0d3ca2d1a2e4a9e95a8dddadc337723e2c4a818137581c6",
+      "after": "d497a7f5c3e8fdf59114bb96bddd061ea841aa4d9f2ea2c53f16a9c2e7349847"
+    },
+    {
+      "path": "docs/ERROR_CODES.md",
+      "before": "1e48d1764ec7ebc4e56887ed80e8d17bda03087df4fe564f2f12b9072e77eab5",
+      "after": "d571ea3c83d623f4b5eb7b686227307f5f2a039db678b9fe94e82869fce778ab"
+    },
+    {
+      "path": "docs/FEATURE_MATRIX.md",
+      "before": "0ff706cf32135b0a98cb8caa816d697f22115ecdb484567609a1c639851f02df",
+      "after": "00f91b638f439b5a0463fbc211c07e76dd546fc056e15531be49cdb85911866d"
+    },
+    {
+      "path": "docs/PERFORMANCE.md",
+      "before": "3095def0eee0f1468a088d03c4c76967c23784cc319f77b9e8f0c23381338936",
+      "after": "16d6c3ecf75952ce6cc39a8678efc356ab766a2442bdd2e66e83f59d3429977f"
+    },
+    {
+      "path": "docs/SOURCE_TEST_MAP.md",
+      "before": "65e2b40d2996664fff23a603510c601bd75876cb49c195e28d952d32916728c3",
+      "after": "2f94ee4c2e08f7bd5108a05d8309920fd69d2b0ca6ff63180088ec0d5020c0dd"
+    },
+    {
+      "path": "docs/TEST_INVENTORY.json",
+      "before": "40382134a787c588bca0b8a10fa483645bd10ef7d636dc3585be08f16edcb955",
+      "after": "1c6af8d99ce5457217e15e5212009257cf6505fbfee8461b0d86d2a77b3e4f49"
+    },
+    {
+      "path": "docs/reports/gate-01.log",
+      "before": "96a9332681636ed79fe27b20f2373fbb0e533aba013f6c8bf7ae7728b44b48d1",
+      "after": "e9dcb80d9df239b211b70a3038e64c6a11dd9e6074f6d93f594cf1184630135f"
+    },
+    {
+      "path": "docs/reports/gate-04.log",
+      "before": "aad7a849599fa794b02f40fc5e9826f13e6065d72c6eb2d1b1c3a0285a4af8b1",
+      "after": "ca460dd0c1c1296fe2e7466f5b20664530c05a6b892dd44b1f6018d3bd13d599"
+    },
+    {
+      "path": "docs/reports/image-200.json",
+      "before": "e15080c9a150ebe486327c22250c52551083c5132b22c799cdc0e3687b470fb7",
+      "after": "51e99778d913bba5ef1ae8709acfe5a74b320a639aa1b4d6fcf29beef4e5569b"
+    },
+    {
+      "path": "docs/reports/old-project-final.json",
+      "before": "91e2b64eeacfde3e0769e32e784e4465151ac0ec0b0404a9a34797b03a754485",
+      "after": "e4f3ca87714ea0bd8d610aa957ff66285f04630726ee3e32bc8bf701de35cd3a"
+    },
+    {
+      "path": "docs/reports/package-smoke.json",
+      "before": "1b16531808b2e0e828658f5232febcf230d26031ebdcf556bbd978cb483a5f05",
+      "after": "256e79f0407fd1f046a8a76e4f5812d4da43d35339fd7cfcf75ca3ef20b87706"
+    },
+    {
+      "path": "docs/reports/performance.json",
+      "before": "6629f3764acd1ba67b5926a306573b8c1c39b7421907143f0e35aa7ecd85639e",
+      "after": "cf5c2c7bdcf26ab4b93de424ec19991581bdadcd8c73749c584bfdcef89c8d8b"
+    },
+    {
+      "path": "docs/reports/pytest.xml",
+      "before": "837922364e3332ee9f7acc576309d5e8aa5922fee76c50af0715a6cf98d609ba",
+      "after": "15fe9e75727ebfb44239c9d89cce15047519c771cd851d8c7ef63827aaf301de"
+    },
+    {
+      "path": "docs/reports/verification.json",
+      "before": "347ab87a71b8bdeda474be64739e8a2b6cf3ee247b0cc5ac596a77c79061cef3",
+      "after": "dd48a6bbf8f02675209e5c5496ee9ddacf2028560bf4de0b09670f44a268a9c5"
+    },
+    {
+      "path": "docs/reports/video-eight.json",
+      "before": "f0986fa172ce521072af0c7260c68e09da073004fd22a75efa957cf177c7fbb9",
+      "after": "05f10c7c0dfa902c7db327b19418aa65c5d887bf2815113451909781e7866675"
+    },
+    {
+      "path": "dist/metasocli_py-0.1.0-py3-none-any.whl",
+      "before": "4b0969dfa1f0c7bfb8d1eb5ceca16988f77b37f57977547125bc6ee5f7ae1e8f",
+      "after": "dc445ea1327cbc3997e8f78a581750a3629eaaa53ea5f6e73e62048599045c18"
+    },
+    {
+      "path": "dist/metasocli_py-0.1.0.tar.gz",
+      "before": "cbb74a26e93fe6cc3e965b53281a9f11e44d550e48648e8c3cde53153fe39f8e",
+      "after": "2d937a3cd2a7e9062844fa383addbb952f2aaebef08b5fb70ca5d5ea4f720f5e"
+    }
+  ],
+  "productionSourceFilesChanged": [
+    "src/metasocli_py/images/contracts.py",
+    "src/metasocli_py/images/workflow.py",
+    "src/metasocli_py/video/capacity.py",
+    "src/metasocli_py/video/execution.py"
+  ],
+  "paidCalls": 0,
+  "realCredentialsUsed": false,
+  "externalNetworkGuardRetained": true,
+  "testOnlyExplicitLoopbackInjection": true,
+  "globalSkillInstallation": false,
+  "githubPush": false,
+  "runtimeVersionChanged": false,
+  "dependenciesChanged": false,
+  "repairDirectory": "E:\\pymetaso\\.work\\recovery-fix-20261113-2b10f1fa",
+  "scheduler": {
+    "additionalPostCount": 1,
+    "historicalGetCount": 4,
+    "selectedGetCount": 1,
+    "historicalDownloadCount": 0,
+    "maxParallelGet": 4,
+    "elapsedMs": 1211.5598000236787,
+    "terminalToRefillMs": 174.1726000327617,
+    "getRequests": [
+      {
+        "path": "/api/minimax/v2/query/video_generation/1",
+        "headers": {
+          "Host": "127.0.0.1:52338",
+          "Connection": "keep-alive",
+          "User-Agent": "python-httpx/0.28.1",
+          "Accept-Encoding": "identity",
+          "Authorization": "Bearer synthetic",
+          "Accept": "application/json"
+        },
+        "time": 263242.9248183
+      },
+      {
+        "path": "/api/minimax/v2/query/video_generation/2",
+        "headers": {
+          "Host": "127.0.0.1:52338",
+          "Connection": "keep-alive",
+          "User-Agent": "python-httpx/0.28.1",
+          "Accept-Encoding": "identity",
+          "Authorization": "Bearer synthetic",
+          "Accept": "application/json"
+        },
+        "time": 263242.9250928
+      },
+      {
+        "path": "/api/minimax/v2/query/video_generation/3",
+        "headers": {
+          "Host": "127.0.0.1:52338",
+          "Connection": "keep-alive",
+          "User-Agent": "python-httpx/0.28.1",
+          "Accept-Encoding": "identity",
+          "Authorization": "Bearer synthetic",
+          "Accept": "application/json"
+        },
+        "time": 263242.9253442
+      },
+      {
+        "path": "/api/minimax/v2/query/video_generation/4",
+        "headers": {
+          "Host": "127.0.0.1:52338",
+          "Connection": "keep-alive",
+          "User-Agent": "python-httpx/0.28.1",
+          "Accept-Encoding": "identity",
+          "Authorization": "Bearer synthetic",
+          "Accept": "application/json"
+        },
+        "time": 263242.9258207
+      },
+      {
+        "path": "/api/minimax/v2/query/video_generation/5",
+        "headers": {
+          "Host": "127.0.0.1:52338",
+          "Connection": "keep-alive",
+          "User-Agent": "python-httpx/0.28.1",
+          "Accept-Encoding": "identity",
+          "Authorization": "Bearer synthetic",
+          "Accept": "application/json"
+        },
+        "time": 263243.403107
+      },
+      {
+        "path": "/video/5",
+        "headers": {
+          "Host": "127.0.0.1:52338",
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "User-Agent": "python-httpx/0.28.1",
+          "Accept-Encoding": "identity"
+        },
+        "time": 263243.4701762
+      }
+    ],
+    "events": [
+      [
+        "create",
+        "1",
+        263242.0801867
+      ],
+      [
+        "create",
+        "2",
+        263242.0814366
+      ],
+      [
+        "create",
+        "3",
+        263242.0819446
+      ],
+      [
+        "create",
+        "4",
+        263242.0823905
+      ],
+      [
+        "terminal",
+        "1",
+        263243.0254914
+      ],
+      [
+        "create",
+        "5",
+        263243.1996687
+      ],
+      [
+        "terminal",
+        "5",
+        263243.4031176
+      ],
+      [
+        "download",
+        "5",
+        263243.6213659
+      ]
+    ],
+    "newPostStartedBeforeSlowHistoricalResponses": true
+  },
+  "normalScheduler": {
+    "postCount": 2,
+    "selectedGetCount": 2,
+    "historicalGetCount": 0,
+    "downloadGetCount": 2,
+    "elapsedMs": 804.1300000040792,
+    "events": [
+      [
+        "create",
+        "1",
+        263240.5070669
+      ],
+      [
+        "create",
+        "2",
+        263240.507285
+      ],
+      [
+        "terminal",
+        "1",
+        263240.7740095
+      ],
+      [
+        "terminal",
+        "2",
+        263240.7750518
+      ],
+      [
+        "download",
+        "1",
+        263241.024366
+      ],
+      [
+        "download",
+        "2",
+        263241.0250421
+      ]
+    ]
+  },
+  "imageWrites": {
+    "observedWorkflowJsonWrites": {
+      "authorization": 1,
+      "job:prepared": 1,
+      "quotaLedger": 3,
+      "job:submitting": 1,
+      "job:response_saved": 1,
+      "job:received": 1,
+      "job:downloaded": 1,
+      "job:registered": 1
+    },
+    "elapsedMs": 275.65429999958724,
+    "postCount": 1,
+    "protocolChangesPerRequestVsReviewedSource": {
+      "additionalPreparedJobWrite": 1,
+      "additionalIntentLedgerWrite": 1,
+      "removedRedundantRunBindingWrite": 1,
+      "netAdditionalWrites": 1
+    },
+    "countScope": "workflow.write_json; response stream and other-module receipt writes excluded"
+  }
+}

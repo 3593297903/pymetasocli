@@ -1,0 +1,46 @@
+{
+  "sourceFiles": [
+    {
+      "path": "src/metasocli_py/application/story.py",
+      "expectedBeforeSha256": "7f0b3bf268507fa4513bd838ea321a45e7ecce854327b55de71d10fa5641b752",
+      "expectedBeforeState": "file",
+      "proposedSha256": "4c03868e780f9337598b5ac1c6978feda8cabeab1b3d0b1c552be7467242f761",
+      "actualAfterSha256": "4c03868e780f9337598b5ac1c6978feda8cabeab1b3d0b1c552be7467242f761"
+    },
+    {
+      "path": "src/metasocli_py/images/proof_cache.py",
+      "expectedBeforeSha256": null,
+      "expectedBeforeState": "absent",
+      "proposedSha256": "205adca3da2f075ce294476028e25c577d425a2987fd6ec2b61caa035befff40",
+      "actualAfterSha256": "205adca3da2f075ce294476028e25c577d425a2987fd6ec2b61caa035befff40"
+    },
+    {
+      "path": "src/metasocli_py/images/workflow.py",
+      "expectedBeforeSha256": "2e0a104bb1065fd0e99bff213bbce86c007ccc70617d68dc3596987625015d01",
+      "expectedBeforeState": "file",
+      "proposedSha256": "bfb8cf6be7c4ce2e82dda33830158528656649018f17a04aeabacec403fff44c",
+      "actualAfterSha256": "bfb8cf6be7c4ce2e82dda33830158528656649018f17a04aeabacec403fff44c"
+    },
+    {
+      "path": "src/metasocli_py/video/execution.py",
+      "expectedBeforeSha256": "7d87b42a69981871bb962bed10b050a4d197539b2ec0e6fd60c7bc61c0bd88e4",
+      "expectedBeforeState": "file",
+      "proposedSha256": "98b37c5d134863c0bc197212d559222527c479d3e5b82105a90387a0f0c3958b",
+      "actualAfterSha256": "98b37c5d134863c0bc197212d559222527c479d3e5b82105a90387a0f0c3958b"
+    }
+  ],
+  "newTests": [
+    {
+      "path": "tests/test_history_delayed_wakeup.py",
+      "sha256": "76d8ed00ef465a73d59877ded7b5cf5b142b61009f37a9c7fa306ffcff51c33f"
+    },
+    {
+      "path": "tests/test_history_round_budget.py",
+      "sha256": "d0b94dc0f5d5766ddc5cdc361b1809839ed9047d1d5e405fddf0b8fc7d766e87"
+    },
+    {
+      "path": "tests/test_image_proof_cache.py",
+      "sha256": "c90f38f5b0ed89a200eb2c6855e37797af955ac7cf2b240b98f126ecb8c75c3a"
+    }
+  ]
+}

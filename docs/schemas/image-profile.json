@@ -1,0 +1,268 @@
+{
+  "$defs": {
+    "Limits": {
+      "additionalProperties": false,
+      "properties": {
+        "concurrent": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Concurrent"
+        },
+        "rpm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpm"
+        },
+        "batch": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Batch"
+        },
+        "source": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Source",
+          "type": "string"
+        },
+        "checkedAt": {
+          "title": "Checkedat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "checkedAt"
+      ],
+      "title": "Limits",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "backend": {
+      "const": "api",
+      "default": "api",
+      "title": "Backend",
+      "type": "string"
+    },
+    "provider": {
+      "const": "yiciyuang",
+      "default": "yiciyuang",
+      "title": "Provider",
+      "type": "string"
+    },
+    "origin": {
+      "const": "https://api.yiciyuang.com",
+      "default": "https://api.yiciyuang.com",
+      "title": "Origin",
+      "type": "string"
+    },
+    "model": {
+      "const": "gpt-image-2.5",
+      "default": "gpt-image-2.5",
+      "title": "Model",
+      "type": "string"
+    },
+    "quality": {
+      "default": "medium",
+      "enum": [
+        "auto",
+        "low",
+        "medium",
+        "high"
+      ],
+      "title": "Quality",
+      "type": "string"
+    },
+    "n": {
+      "const": 1,
+      "default": 1,
+      "title": "N",
+      "type": "integer"
+    },
+    "response_format": {
+      "default": "url",
+      "enum": [
+        "url",
+        "b64_json"
+      ],
+      "title": "Response Format",
+      "type": "string"
+    },
+    "submissionMode": {
+      "const": "all-ready",
+      "default": "all-ready",
+      "title": "Submissionmode",
+      "type": "string"
+    },
+    "boardSize": {
+      "default": "1920x1088",
+      "enum": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536",
+        "1920x1088",
+        "1088x1920",
+        "2048x2048",
+        "2560x1440",
+        "2560x1707",
+        "1707x2560",
+        "4096x4096"
+      ],
+      "title": "Boardsize",
+      "type": "string"
+    },
+    "firstFrameSize": {
+      "default": "1088x1920",
+      "enum": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536",
+        "1920x1088",
+        "1088x1920",
+        "2048x2048",
+        "2560x1440",
+        "2560x1707",
+        "1707x2560",
+        "4096x4096"
+      ],
+      "title": "Firstframesize",
+      "type": "string"
+    },
+    "sizes": {
+      "patternProperties": {
+        "^[a-z0-9][a-z0-9_-]*$": {
+          "enum": [
+            "1024x1024",
+            "1536x1024",
+            "1024x1536",
+            "1920x1088",
+            "1088x1920",
+            "2048x2048",
+            "2560x1440",
+            "2560x1707",
+            "1707x2560",
+            "4096x4096"
+          ],
+          "type": "string"
+        }
+      },
+      "propertyNames": {
+        "maxLength": 80,
+        "minLength": 1
+      },
+      "title": "Sizes",
+      "type": "object"
+    },
+    "providerLimits": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Limits"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "downloadConcurrency": {
+      "const": 2,
+      "default": 2,
+      "title": "Downloadconcurrency",
+      "type": "integer"
+    },
+    "decodeConcurrency": {
+      "const": 2,
+      "default": 2,
+      "title": "Decodeconcurrency",
+      "type": "integer"
+    },
+    "registrationConcurrency": {
+      "const": 1,
+      "default": 1,
+      "title": "Registrationconcurrency",
+      "type": "integer"
+    },
+    "generationTimeoutMs": {
+      "default": 600000,
+      "maximum": 3600000,
+      "minimum": 1000,
+      "title": "Generationtimeoutms",
+      "type": "integer"
+    },
+    "generationTimeoutMode": {
+      "anyOf": [
+        {
+          "const": "exact",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Generationtimeoutmode"
+    },
+    "automaticPostRetries": {
+      "const": 0,
+      "default": 0,
+      "title": "Automaticpostretries",
+      "type": "integer"
+    },
+    "quotaGroup": {
+      "default": "yiciyuang-default",
+      "maxLength": 80,
+      "minLength": 1,
+      "pattern": "^[a-z0-9][a-z0-9_-]*$",
+      "title": "Quotagroup",
+      "type": "string"
+    },
+    "maxResponseBytes": {
+      "default": 47185920,
+      "maximum": 47185920,
+      "minimum": 1024,
+      "title": "Maxresponsebytes",
+      "type": "integer"
+    },
+    "maxImageBytes": {
+      "default": 31457280,
+      "maximum": 31457280,
+      "minimum": 1024,
+      "title": "Maximagebytes",
+      "type": "integer"
+    },
+    "maxTempBytes": {
+      "default": 34359738368,
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991,
+      "title": "Maxtempbytes",
+      "type": "integer"
+    }
+  },
+  "title": "Profile",
+  "type": "object"
+}

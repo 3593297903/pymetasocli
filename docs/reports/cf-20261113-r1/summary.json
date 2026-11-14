@@ -1,0 +1,569 @@
+{
+  "revision": "CF-PERF-20261113-R1",
+  "version": "0.1.0",
+  "tests": {
+    "tests": 125,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "gates": [
+    {
+      "label": "ruff",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "--no-cache",
+        "src",
+        "tests"
+      ],
+      "exitCode": 0,
+      "seconds": 0.14312750002136454,
+      "startedAt": "2026-11-13T10:38:30.452489+00:00",
+      "log": "logs/ruff.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "mypy",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "mypy",
+        "--cache-dir",
+        ".work/cf-04b13d50/mypy",
+        "src/metasocli_py"
+      ],
+      "exitCode": 0,
+      "seconds": 5.751733899989631,
+      "startedAt": "2026-11-13T10:38:30.478396+00:00",
+      "log": "logs/mypy.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "pytest",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=.work/cf-04b13d50/t-full",
+        "--junitxml=.work/cf-04b13d50/results/pytest.xml"
+      ],
+      "exitCode": 0,
+      "seconds": 272.99105880002026,
+      "startedAt": "2026-11-13T10:38:54.027188+00:00",
+      "log": "logs/pytest.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "version",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "metasocli_py",
+        "--version"
+      ],
+      "exitCode": 0,
+      "seconds": 0.24370200000703335,
+      "startedAt": "2026-11-13T10:40:25.087037+00:00",
+      "log": "logs/version.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "help",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "metasocli_py",
+        "--help"
+      ],
+      "exitCode": 0,
+      "seconds": 0.2416337999748066,
+      "startedAt": "2026-11-13T10:40:25.951572+00:00",
+      "log": "logs/help.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "build",
+      "command": [
+        "uv",
+        "build",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "seconds": 5.852507399977185,
+      "startedAt": "2026-11-13T10:41:53.095830+00:00",
+      "log": "logs/build.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "package-smoke",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "scripts/package_smoke.py"
+      ],
+      "exitCode": 0,
+      "seconds": 8.537647799996193,
+      "startedAt": "2026-11-13T10:43:43.432511+00:00",
+      "log": "logs/package-smoke.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "benchmark-series",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        ".work/cf-04b13d50/benchmark_series.py"
+      ],
+      "exitCode": 0,
+      "seconds": 270.8892348000081,
+      "startedAt": "2026-11-13T10:44:05.178008+00:00",
+      "log": "logs/benchmark-series.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    },
+    {
+      "label": "existing-benchmark",
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "scripts/benchmark.py"
+      ],
+      "exitCode": 0,
+      "seconds": 84.79607519996352,
+      "startedAt": "2026-11-13T10:48:52.787731+00:00",
+      "log": "logs/existing-benchmark.log",
+      "UV_OFFLINE": "1",
+      "clearedKeys": [
+        "METASO_API_KEY",
+        "METASOCLI_IMAGE_API_KEY",
+        "METASOCLI_PY_METASO_API_KEY",
+        "METASOCLI_PY_IMAGE_API_KEY"
+      ],
+      "isolatedChild": true
+    }
+  ],
+  "performance": [
+    {
+      "count": 30,
+      "scenario": "all-ready",
+      "variant": "before",
+      "rounds": 3,
+      "metrics": {
+        "firstSendMs": {
+          "median": 1136.6806000005454,
+          "min": 1064.9254000163637,
+          "max": 1208.8490999885835
+        },
+        "lastSendMs": {
+          "median": 3189.3319999799132,
+          "min": 3063.0031999899074,
+          "max": 3418.483799963724
+        },
+        "totalMs": {
+          "median": 8247.664999973495,
+          "min": 7983.335400000215,
+          "max": 8466.955099953339
+        },
+        "resumeMs": {
+          "median": 252.27960001211613,
+          "min": 237.80829994939268,
+          "max": 255.25240000570193
+        },
+        "peakRssBytes": {
+          "median": 78614528,
+          "min": 77631488,
+          "max": 78868480
+        },
+        "loopLagP95Ms": {
+          "median": 199.22260003862903,
+          "min": 166.5119000338018,
+          "max": 246.75780000165105
+        }
+      },
+      "counts": [
+        {
+          "load_plan": 62,
+          "read_json": 539,
+          "prepared_proof": 60,
+          "repair_prepared": 30
+        },
+        {
+          "load_plan": 62,
+          "read_json": 539,
+          "prepared_proof": 60,
+          "repair_prepared": 30
+        },
+        {
+          "load_plan": 62,
+          "read_json": 539,
+          "prepared_proof": 60,
+          "repair_prepared": 30
+        }
+      ]
+    },
+    {
+      "count": 30,
+      "scenario": "all-ready",
+      "variant": "after",
+      "rounds": 3,
+      "metrics": {
+        "firstSendMs": {
+          "median": 957.3723999783397,
+          "min": 928.8429000298493,
+          "max": 1004.278999986127
+        },
+        "lastSendMs": {
+          "median": 2720.4739000299014,
+          "min": 2597.1066000056453,
+          "max": 2817.8841999615543
+        },
+        "totalMs": {
+          "median": 8159.988600003999,
+          "min": 7793.669699982274,
+          "max": 8260.294799983967
+        },
+        "resumeMs": {
+          "median": 234.18840003432706,
+          "min": 230.48010002821684,
+          "max": 274.9611000181176
+        },
+        "peakRssBytes": {
+          "median": 77750272,
+          "min": 77504512,
+          "max": 77918208
+        },
+        "loopLagP95Ms": {
+          "median": 168.4390999819152,
+          "min": 164.9508999637328,
+          "max": 188.81339999847114
+        }
+      },
+      "counts": [
+        {
+          "load_plan": 2,
+          "read_json": 361,
+          "prepared_proof": 60
+        },
+        {
+          "load_plan": 2,
+          "read_json": 361,
+          "prepared_proof": 60
+        },
+        {
+          "load_plan": 2,
+          "read_json": 361,
+          "prepared_proof": 60
+        }
+      ]
+    },
+    {
+      "count": 200,
+      "scenario": "all-ready",
+      "variant": "before",
+      "rounds": 1,
+      "metrics": {
+        "firstSendMs": {
+          "median": 1791.0367000149563,
+          "min": 1791.0367000149563,
+          "max": 1791.0367000149563
+        },
+        "lastSendMs": {
+          "median": 43996.026600012556,
+          "min": 43996.026600012556,
+          "max": 43996.026600012556
+        },
+        "totalMs": {
+          "median": 91329.49090003967,
+          "min": 91329.49090003967,
+          "max": 91329.49090003967
+        },
+        "resumeMs": {
+          "median": 1727.1288000047207,
+          "min": 1727.1288000047207,
+          "max": 1727.1288000047207
+        },
+        "peakRssBytes": {
+          "median": 125423616,
+          "min": 125423616,
+          "max": 125423616
+        },
+        "loopLagP95Ms": {
+          "median": 90.27530003571883,
+          "min": 90.27530003571883,
+          "max": 90.27530003571883
+        }
+      },
+      "counts": [
+        {
+          "load_plan": 402,
+          "read_json": 3599,
+          "prepared_proof": 400,
+          "repair_prepared": 200
+        }
+      ]
+    },
+    {
+      "count": 200,
+      "scenario": "all-ready",
+      "variant": "after",
+      "rounds": 1,
+      "metrics": {
+        "firstSendMs": {
+          "median": 1244.7387999854982,
+          "min": 1244.7387999854982,
+          "max": 1244.7387999854982
+        },
+        "lastSendMs": {
+          "median": 31024.900799966417,
+          "min": 31024.900799966417,
+          "max": 31024.900799966417
+        },
+        "totalMs": {
+          "median": 79348.31189998658,
+          "min": 79348.31189998658,
+          "max": 79348.31189998658
+        },
+        "resumeMs": {
+          "median": 1447.3882999736816,
+          "min": 1447.3882999736816,
+          "max": 1447.3882999736816
+        },
+        "peakRssBytes": {
+          "median": 125521920,
+          "min": 125521920,
+          "max": 125521920
+        },
+        "loopLagP95Ms": {
+          "median": 89.14929996011779,
+          "min": 89.14929996011779,
+          "max": 89.14929996011779
+        }
+      },
+      "counts": [
+        {
+          "load_plan": 2,
+          "read_json": 2401,
+          "prepared_proof": 400
+        }
+      ]
+    },
+    {
+      "count": 30,
+      "scenario": "early-results",
+      "variant": "before",
+      "rounds": 1,
+      "metrics": {
+        "firstSendMs": {
+          "median": 1113.4281000122428,
+          "min": 1113.4281000122428,
+          "max": 1113.4281000122428
+        },
+        "lastSendMs": {
+          "median": 3493.583000032231,
+          "min": 3493.583000032231,
+          "max": 3493.583000032231
+        },
+        "totalMs": {
+          "median": 8077.333000022918,
+          "min": 8077.333000022918,
+          "max": 8077.333000022918
+        },
+        "resumeMs": {
+          "median": 235.6728000449948,
+          "min": 235.6728000449948,
+          "max": 235.6728000449948
+        },
+        "peakRssBytes": {
+          "median": 78802944,
+          "min": 78802944,
+          "max": 78802944
+        },
+        "loopLagP95Ms": {
+          "median": 203.73399998992682,
+          "min": 203.73399998992682,
+          "max": 203.73399998992682
+        }
+      },
+      "counts": [
+        {
+          "load_plan": 62,
+          "read_json": 539,
+          "prepared_proof": 60,
+          "repair_prepared": 30
+        }
+      ]
+    },
+    {
+      "count": 30,
+      "scenario": "early-results",
+      "variant": "after",
+      "rounds": 1,
+      "metrics": {
+        "firstSendMs": {
+          "median": 956.1819999944419,
+          "min": 956.1819999944419,
+          "max": 956.1819999944419
+        },
+        "lastSendMs": {
+          "median": 3163.7762999744155,
+          "min": 3163.7762999744155,
+          "max": 3163.7762999744155
+        },
+        "totalMs": {
+          "median": 7964.565199974459,
+          "min": 7964.565199974459,
+          "max": 7964.565199974459
+        },
+        "resumeMs": {
+          "median": 248.63759998697788,
+          "min": 248.63759998697788,
+          "max": 248.63759998697788
+        },
+        "peakRssBytes": {
+          "median": 76705792,
+          "min": 76705792,
+          "max": 76705792
+        },
+        "loopLagP95Ms": {
+          "median": 162.25770000368357,
+          "min": 162.25770000368357,
+          "max": 162.25770000368357
+        }
+      },
+      "counts": [
+        {
+          "load_plan": 2,
+          "read_json": 361,
+          "prepared_proof": 60
+        }
+      ]
+    }
+  ],
+  "realPaidCalls": 0,
+  "audit": {
+    "changedExisting": [
+      {
+        "path": "src/metasocli_py/application/story.py",
+        "before": "7f0b3bf268507fa4513bd838ea321a45e7ecce854327b55de71d10fa5641b752",
+        "after": "4c03868e780f9337598b5ac1c6978feda8cabeab1b3d0b1c552be7467242f761"
+      },
+      {
+        "path": "src/metasocli_py/images/workflow.py",
+        "before": "2e0a104bb1065fd0e99bff213bbce86c007ccc70617d68dc3596987625015d01",
+        "after": "bfb8cf6be7c4ce2e82dda33830158528656649018f17a04aeabacec403fff44c"
+      },
+      {
+        "path": "src/metasocli_py/video/execution.py",
+        "before": "7d87b42a69981871bb962bed10b050a4d197539b2ec0e6fd60c7bc61c0bd88e4",
+        "after": "98b37c5d134863c0bc197212d559222527c479d3e5b82105a90387a0f0c3958b"
+      }
+    ],
+    "newSourceAndTests": [
+      {
+        "path": "src/metasocli_py/images/proof_cache.py",
+        "sha256": "205adca3da2f075ce294476028e25c577d425a2987fd6ec2b61caa035befff40"
+      },
+      {
+        "path": "tests/test_cf_cache_boundaries.py",
+        "sha256": "51c29c45f00f358ff246f47b5cf8c2cb42855357e9be055e4a84fe93b9377954"
+      },
+      {
+        "path": "tests/test_history_delayed_wakeup.py",
+        "sha256": "76d8ed00ef465a73d59877ded7b5cf5b142b61009f37a9c7fa306ffcff51c33f"
+      },
+      {
+        "path": "tests/test_history_round_budget.py",
+        "sha256": "d0b94dc0f5d5766ddc5cdc361b1809839ed9047d1d5e405fddf0b8fc7d766e87"
+      },
+      {
+        "path": "tests/test_image_proof_cache.py",
+        "sha256": "c90f38f5b0ed89a200eb2c6855e37797af955ac7cf2b240b98f126ecb8c75c3a"
+      }
+    ],
+    "allOriginalTestsUnchanged": true,
+    "allOtherBusinessSourcesUnchanged": true,
+    "skillsResourcesDependenciesCliProvidersUnchanged": true
+  }
+}

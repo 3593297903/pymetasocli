@@ -1,0 +1,135 @@
+[
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\character-board.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\character-board.md",
+    "sourceSha256": "b92a3b0324764828341176961d8ddfb330f8c54a2519e379529e4cf7e5d7b45c",
+    "destinationSha256": "b92a3b0324764828341176961d8ddfb330f8c54a2519e379529e4cf7e5d7b45c",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\denoise-policy.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\denoise-policy.md",
+    "sourceSha256": "0ec4cb4b26f2feab187ad9805e7564c742cf1a415cc42aa2171566c258db9474",
+    "destinationSha256": "58149b2ebb2a75df5d345d41cd54e721d7f58cf7ce626164a1a4eda043c8bd96",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\first-frame.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\first-frame.md",
+    "sourceSha256": "574404c448edcf7d2ae3ac9f139c786f0d33f21e1532c305b63d30adc6f18fcd",
+    "destinationSha256": "78770fd98f914424bdeb3534938e7e2c1c9e0a6fe0c9ef2143c6f38840419d5b",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\handoff-contract.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\handoff-contract.md",
+    "sourceSha256": "7cfd14db99a54ff0101992bd62871c1bdf252951a16b0cc1201b8954470221fa",
+    "destinationSha256": "1616cc2db2b0a87bbb606723fa9b7ed5d8f055efa9481228939289de3a35a1ef",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\image-workflow.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\image-workflow.md",
+    "sourceSha256": "461cced54420169e1b201dd645ee6702ae360d99d19bfb40ba6726f31f465a60",
+    "destinationSha256": "255c4b3cf00b03f3d018a30daaca92feeaf3c6015264472028f58dfcee3f7b79",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\prop-board.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\prop-board.md",
+    "sourceSha256": "32ada69ef2dd4394d9f6a617ca91196af98ede1db2aa252170a951aedfb2f352",
+    "destinationSha256": "32ada69ef2dd4394d9f6a617ca91196af98ede1db2aa252170a951aedfb2f352",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\scene-board.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\scene-board.md",
+    "sourceSha256": "b96cddd57ce70e5fae3e921e490ad8dc840ac4ef764e16713eb31bc3beaf4505",
+    "destinationSha256": "b96cddd57ce70e5fae3e921e490ad8dc840ac4ef764e16713eb31bc3beaf4505",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\selected-local-image.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\selected-local-image.md",
+    "sourceSha256": "fd079a873318265fd368fcb3ee269dca1521f4fb5bdf3953617be65eb753d0f5",
+    "destinationSha256": "de633c5e9f77917e87017a9ba6020a4bc544a1b573041d5e1db2d40c87765d30",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\shared-visual-policy.md",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\shared-visual-policy.md",
+    "sourceSha256": "f29dd8a738309c1c1549b6565ba22f7f56c5f18f25891ebb962d6c491e359109",
+    "destinationSha256": "f29dd8a738309c1c1549b6565ba22f7f56c5f18f25891ebb962d6c491e359109",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\denoise\\character.txt",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\denoise\\character.txt",
+    "sourceSha256": "fa0c6628aca1e371ffa5bf80657c3b46f14c065f4ba2683e68227d50b4145b71",
+    "destinationSha256": "fa0c6628aca1e371ffa5bf80657c3b46f14c065f4ba2683e68227d50b4145b71",
+    "reason": "Verbatim denoise bytes"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\denoise\\manifest.json",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\denoise\\manifest.json",
+    "sourceSha256": "67769c09ed7446d7a86d1c8f0d0bebfc1f19f9314760b25973000bd614b2b040",
+    "destinationSha256": "67769c09ed7446d7a86d1c8f0d0bebfc1f19f9314760b25973000bd614b2b040",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\denoise\\prop.txt",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\denoise\\prop.txt",
+    "sourceSha256": "b334ee91c91ba678fde1a06c5520ac725e845964039e2093ec2568684ca505ac",
+    "destinationSha256": "b334ee91c91ba678fde1a06c5520ac725e845964039e2093ec2568684ca505ac",
+    "reason": "Verbatim denoise bytes"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\references\\denoise\\scene.txt",
+    "destination": "src\\metasocli_py\\resources\\reference-images\\denoise\\scene.txt",
+    "sourceSha256": "455836fe6522f6663028fbac36009d4d360dae04492a52a4ab1dad0a625199c2",
+    "destinationSha256": "455836fe6522f6663028fbac36009d4d360dae04492a52a4ab1dad0a625199c2",
+    "reason": "Verbatim denoise bytes"
+  },
+  {
+    "source": ".baseline\\skills\\metasoclitk\\references\\character-board.md",
+    "destination": "src\\metasocli_py\\resources\\tk\\character-board.md",
+    "sourceSha256": "71f8219d01c5286f249b5d20feae4d09f843bc908fb35ff627f7e28523c21b34",
+    "destinationSha256": "d58a5ae043991890a8b4b606d40c34f18edd749b26aa35e54bf67f80e3fd08a8",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasoclitk\\references\\prop-board.md",
+    "destination": "src\\metasocli_py\\resources\\tk\\prop-board.md",
+    "sourceSha256": "ebb0bc76d4815ce412ad17fab45447fcd4c92ac90ccc0385d448b8b932567458",
+    "destinationSha256": "64fd677d05ff4429a935125a15e516c4739d57bdeed74b50e309d94375252324",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasoclitk\\references\\scene-board.md",
+    "destination": "src\\metasocli_py\\resources\\tk\\scene-board.md",
+    "sourceSha256": "4fac9ad88bb9eaa8d1ceb817b024e9225ac5422cbfae44061eb6c76406d074b7",
+    "destinationSha256": "eeae303a5dae8a0e623fdea86af2b8c9a5d4819e5b78d213a273e26c115264e5",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasoclitk\\references\\visual-style.md",
+    "destination": "src\\metasocli_py\\resources\\tk\\visual-style.md",
+    "sourceSha256": "d464e6fa645a8db8a01694ec58eeb07357ec911fd5ad8aa6660d3be2cde32ccb",
+    "destinationSha256": "ea571833be2f9d1180eff1ab41ecf981fa5a4bd42b97e3dc99bc43b7fd37da08",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\scripts\\validate_handoff.py",
+    "destination": "src\\metasocli_py\\media\\handoff.py",
+    "sourceSha256": "73b2a96bcc41a385dc0362d5d7ed25717e64d70e0104c5a430336ace0a540b70",
+    "destinationSha256": "0e159ff5e0365302021070122d755834e8a03806a6d0df4e4309e27827543c93",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  },
+  {
+    "source": ".baseline\\skills\\metasocli-reference-images\\scripts\\append_asset_denoise.py",
+    "destination": "src\\metasocli_py\\media\\denoise.py",
+    "sourceSha256": "cc168c51592cb6e39bef910021a1eda417c27942a3194d7c66fa08e5e407ee37",
+    "destinationSha256": "d962beebb6271cefd2e54e06cbbd0590c7b48fb6a61f582170974966fba6de76",
+    "reason": "Python namespace, CLI/module references, JCS helper adaptation; visual guidance retained"
+  }
+]

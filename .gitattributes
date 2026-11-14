@@ -1,0 +1,2 @@
+# Preserve exact file bytes required by resource and source hash manifests.
+* -text

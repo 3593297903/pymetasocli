@@ -1,0 +1,525 @@
+[
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-before-authorized",
+      "--junitxml=.work/recovery-fix-20261113-2b10f1fa/before-authorized.xml"
+    ],
+    "exitCode": 1,
+    "seconds": 5.085838599974522,
+    "log": "before-authorized.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-before",
+      "--junitxml=.work/recovery-fix-20261113-2b10f1fa/before-isolated.xml"
+    ],
+    "exitCode": 1,
+    "seconds": 1.4656633000122383,
+    "log": "before-isolated.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py",
+      "--junitxml=.work/recovery-fix-20261113-2b10f1fa/before.xml"
+    ],
+    "exitCode": 1,
+    "seconds": 3.281388600007631,
+    "log": "before.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_repair_images.py",
+      "tests/test_repair_video.py",
+      "tests/test_retry_ir_edges.py",
+      "tests/test_independent_review.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-final-targeted",
+      "--junitxml=.work/recovery-fix-20261113-2b10f1fa/final-targeted.xml"
+    ],
+    "exitCode": 0,
+    "seconds": 75.53868529997999,
+    "log": "final-targeted.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "scripts/finalize_reports.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.2922380999661982,
+    "log": "finalize-reports.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_image_recovery.py",
+      "tests/test_revision_boundaries.py",
+      "tests/test_process_boundaries.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-image-regression"
+    ],
+    "exitCode": 1,
+    "seconds": 56.154856299981475,
+    "log": "image-regression.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "ruff",
+      "check",
+      "."
+    ],
+    "exitCode": 0,
+    "seconds": 0.06685469998046756,
+    "log": "lint-final.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "ruff",
+      "check",
+      "."
+    ],
+    "exitCode": 1,
+    "seconds": 0.08358199999202043,
+    "log": "lint-first.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "ruff",
+      "check",
+      "src/metasocli_py/images/workflow.py",
+      "tests/test_repair_images.py",
+      "tests/test_repair_video.py",
+      "tests/process_worker.py",
+      "--fix"
+    ],
+    "exitCode": 0,
+    "seconds": 0.07643889996688813,
+    "log": "lint-fix.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "mypy",
+      "src/metasocli_py"
+    ],
+    "exitCode": 0,
+    "seconds": 1.0198639999725856,
+    "log": "mypy-final.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "mypy",
+      "src/metasocli_py"
+    ],
+    "exitCode": 0,
+    "seconds": 1.1881172999856062,
+    "log": "mypy-first.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_repair_images.py",
+      "tests/test_revision_boundaries.py::test_corrupt_output_does_not_strand_peer_and_missing_output_is_incomplete",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-new-images"
+    ],
+    "exitCode": 1,
+    "seconds": 30.771961299993563,
+    "log": "new-images.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_repair_video.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-new-video"
+    ],
+    "exitCode": 0,
+    "seconds": 32.77955129998736,
+    "log": "new-video.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_repair_images.py::test_live_owner_then_dead_unsent_reservation_frees_other_story",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-prepared-owner-fix"
+    ],
+    "exitCode": 0,
+    "seconds": 3.690937799983658,
+    "log": "prepared-owner-fix.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py",
+      "-k",
+      "new_scope",
+      "tests/test_capacity_ir.py",
+      "tests/test_video_http.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-py01"
+    ],
+    "exitCode": 1,
+    "seconds": 3.7483070000016596,
+    "log": "py01-first.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py::test_new_scope_refreshes_same_story_old_task_ids",
+      "tests/test_capacity_ir.py",
+      "tests/test_video_http.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-py01-second"
+    ],
+    "exitCode": 0,
+    "seconds": 29.280172099999618,
+    "log": "py01-second.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py",
+      "-k",
+      "explicit_retry",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-py02"
+    ],
+    "exitCode": 0,
+    "seconds": 2.9656545000034384,
+    "log": "py02-first.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "scripts/build_reference_docs.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.7814195000100881,
+    "log": "reference-docs.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      ".work/recovery-fix-20261113-2b10f1fa/source_review.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.19945339998230338,
+    "log": "source-review.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_independent_review.py",
+      "--basetemp=.work/recovery-fix-20261113-2b10f1fa/test-three-after",
+      "--junitxml=.work/recovery-fix-20261113-2b10f1fa/three-after.xml"
+    ],
+    "exitCode": 0,
+    "seconds": 6.9882745999784674,
+    "log": "three-after.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "scripts/verify.py"
+    ],
+    "exitCode": 1,
+    "seconds": 257.46613830002025,
+    "log": "verify-1.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--no-sync",
+      "python",
+      "scripts/verify.py"
+    ],
+    "exitCode": 0,
+    "seconds": 386.8733790999977,
+    "log": "verify-final.log",
+    "UV_OFFLINE": "1",
+    "clearedKeys": [
+      "METASO_API_KEY",
+      "METASOCLI_IMAGE_API_KEY",
+      "METASOCLI_PY_METASO_API_KEY",
+      "METASOCLI_PY_IMAGE_API_KEY"
+    ],
+    "isolatedChild": true
+  }
+]

@@ -1,0 +1,27 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.2.0, pluggy-1.7.0
+rootdir: E:\pymetaso
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0, hypothesis-6.170.15, asyncio-1.5.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collected 110 items
+
+tests\test_acceptance_edges.py .......                                   [  6%]
+tests\test_capacity_ir.py .....                                          [ 10%]
+tests\test_credentials_skills.py ...                                     [ 13%]
+tests\test_foundation.py ...........                                     [ 23%]
+tests\test_image_http.py ..                                              [ 25%]
+tests\test_image_recovery.py ..........                                  [ 34%]
+tests\test_independent_review.py ...                                     [ 37%]
+tests\test_local_story.py ..                                             [ 39%]
+tests\test_network_atomic.py ....                                        [ 42%]
+tests\test_process_boundaries.py ..............                          [ 55%]
+tests\test_repair_images.py ................                             [ 70%]
+tests\test_repair_video.py ...............                               [ 83%]
+tests\test_retry_ir_edges.py ....                                        [ 87%]
+tests\test_revision_boundaries.py ...........                            [ 97%]
+tests\test_video_http.py ...                                             [100%]
+
+---------- generated xml file: E:\pymetaso\.work\reports\pytest.xml -----------
+======================= 110 passed in 286.16s (0:04:46) =======================

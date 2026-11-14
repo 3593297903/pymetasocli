@@ -1,0 +1,151 @@
+[
+  {
+    "file": "tests/test_acceptance_edges.py",
+    "tests": [
+      "test_cli_six_eleven_and_concurrent_replace",
+      "test_utf16_narration_relocation_and_ambiguity",
+      "test_image_dag_unlock_before_unrelated_finishes",
+      "test_image_failure_keeps_sibling_receipts_and_quota",
+      "test_image_cancel_drains_receipts_without_resubmitting",
+      "test_video_partial_and_full_reuse_identity",
+      "test_static_legacy_content_only_and_unknown_rejection"
+    ]
+  },
+  {
+    "file": "tests/test_capacity_ir.py",
+    "tests": [
+      "test_query_failure_releases_poll_limit_holds",
+      "test_two_stories_priority_and_spare_capacity",
+      "test_explicit_ir_review_derive_video_false"
+    ]
+  },
+  {
+    "file": "tests/test_credentials_skills.py",
+    "tests": [
+      "test_dpapi_backup_failed_replace_and_status",
+      "test_local_form_host_origin_token_single_use",
+      "test_three_skills_temp_discovery_and_rollback"
+    ]
+  },
+  {
+    "file": "tests/test_foundation.py",
+    "tests": [
+      "test_utf16_source_and_no_trimming",
+      "test_utf16_round_trip",
+      "test_jcs_vectors_and_distinctions",
+      "test_reject_ambiguous_input",
+      "test_strict_types",
+      "test_denoise_idempotent_and_type_specific",
+      "test_audio_pcm_float_vbr_id3_and_false_metadata"
+    ]
+  },
+  {
+    "file": "tests/test_image_http.py",
+    "tests": [
+      "test_200_images_real_http",
+      "test_real_total_deadline"
+    ]
+  },
+  {
+    "file": "tests/test_image_recovery.py",
+    "tests": [
+      "test_image_status_no_automatic_post_retry",
+      "test_image_download_or_truncation_never_regenerates",
+      "test_actual_multipart_order_bytes_names_mime",
+      "test_preparation_full_handoff_and_collect",
+      "test_other_story_unknown_does_not_block_images"
+    ]
+  },
+  {
+    "file": "tests/test_independent_review.py",
+    "tests": [
+      "test_new_scope_refreshes_same_story_old_task_ids",
+      "test_explicit_retry_after_correcting_auth_can_submit_once",
+      "test_image_quota_intent_window_has_durable_recovery"
+    ]
+  },
+  {
+    "file": "tests/test_local_story.py",
+    "tests": [
+      "test_six_episodes_eleven_segments_replace",
+      "test_invalid_duration_bool_and_string"
+    ]
+  },
+  {
+    "file": "tests/test_network_atomic.py",
+    "tests": [
+      "test_direct_proxy_environment_real_http",
+      "test_windows_actual_sharing_denial_bounded_atomic_retry",
+      "test_file_identity_changes_between_stat_and_open_rejected",
+      "test_five_restored_held_tasks_stop_new_reservations"
+    ]
+  },
+  {
+    "file": "tests/test_process_boundaries.py",
+    "tests": [
+      "test_real_child_stable_lock_owner_and_crash",
+      "test_real_transaction_crash_rolls_forward",
+      "test_killed_image_recovers_without_post",
+      "test_killed_video_never_reposts",
+      "test_windows_path_boundaries"
+    ]
+  },
+  {
+    "file": "tests/test_repair_images.py",
+    "tests": [
+      "test_real_child_image_protocol_interruptions",
+      "test_two_real_recovery_processes_share_one_prepared_admission",
+      "test_live_owner_then_dead_unsent_reservation_frees_other_story",
+      "test_prepared_recover_is_zero_post_and_admission_is_idempotent_rpm",
+      "test_unproven_orphans_are_not_released",
+      "test_protocol_timestamps_and_changed_prepared_inputs_fail_closed",
+      "test_released_prepared_readmission_charges_new_rpm_window",
+      "test_image_protocol_local_write_counts",
+      "test_admission_rechecked_before_post"
+    ]
+  },
+  {
+    "file": "tests/test_repair_video.py",
+    "tests": [
+      "test_normal_schedule_has_no_additional_history_gets",
+      "test_history_parallel_refill_only_selected_delivery",
+      "test_history_r3_boundaries",
+      "test_selected_dedup_and_late_active_cannot_overwrite_terminal",
+      "test_auth_fixed_original_scope_and_exactly_once_retry",
+      "test_new_retry_rejection_stops_this_invocation"
+    ]
+  },
+  {
+    "file": "tests/test_retry_ir_edges.py",
+    "tests": [
+      "test_unknown_late_id_obsolete_grant_and_known_failure_retry",
+      "test_ir_rebind_equivalent_segment_and_preserve_old_derived_plan",
+      "test_ir_complete_response_and_result_recover_without_post",
+      "test_real_ffmpeg_av_validation"
+    ]
+  },
+  {
+    "file": "tests/test_revision_boundaries.py",
+    "tests": [
+      "test_url_two_download_lanes_and_local_reports",
+      "test_lost_image_job_with_receipt_never_posts_again",
+      "test_image_request_resealed_tamper_rejected",
+      "test_known_shared_image_limit_survives_unconfigured_second_profile",
+      "test_manual_video_task_link_preserves_observed_terminal",
+      "test_observation_watermark_blocks_stale_running_and_terminal_absorbs",
+      "test_corrupt_output_does_not_strand_peer_and_missing_output_is_incomplete",
+      "test_register_missing_slot_and_old_source_error_cannot_undo_fresh_evidence",
+      "test_explicit_image_specification_blocks_only_conflicting_items",
+      "test_released_same_story_unknown_does_not_block_different_segment",
+      "test_restricted_retry_expands_only_with_explicit_full_batch_authorization"
+    ]
+  },
+  {
+    "file": "tests/test_video_http.py",
+    "tests": [
+      "test_eight_segments_refill_before_slow_download",
+      "test_unknown_no_resubmit_and_exact_one_retry",
+      "test_r3_terminal_late_active_and_watermarks"
+    ]
+  }
+]

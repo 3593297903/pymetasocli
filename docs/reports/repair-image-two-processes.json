@@ -1,0 +1,8 @@
+{
+  "concurrent": 1,
+  "resumeProcesses": 2,
+  "totalPostCount": 1,
+  "admissionCount": 1,
+  "repeatResumePosts": 0,
+  "ownerCollisionRejected": true
+}

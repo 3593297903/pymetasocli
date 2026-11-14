@@ -1,0 +1,26 @@
+{
+  "purpose": "offline language-semantic comparison, not a Python port acceptance test",
+  "typescript": {
+    "runtime": "v24.15.0",
+    "text": "甲😀乙",
+    "length": 4,
+    "selectedUtf16Range": [
+      3,
+      4
+    ],
+    "selectedText": "乙",
+    "canonicalJson": "{\"a\":2,\"A\":3,\"value\":1e-7,\"z\":0,\"Z\":1}",
+    "canonicalSha256": "a1a6e5f2f7aacb8e0055e3f7eef8ae24be7e47f5aa8898a6f0c2192a9a7dea8d"
+  },
+  "python": {
+    "runtime": "3.14.5",
+    "length": 3,
+    "directSlice3To4": "",
+    "utf16Length": 4,
+    "utf16Slice3To4": "乙",
+    "ordinarySortedJson": "{\"A\":3,\"Z\":1.0,\"a\":2,\"value\":1e-07,\"z\":-0.0}",
+    "sha256": "b83d2c465f2b9312f729061d07e2792d323dc5fdc012457ae42d355bc2123a61"
+  },
+  "sameDirectStringLength": false,
+  "sameNaiveCanonicalHash": false
+}

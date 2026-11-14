@@ -1,0 +1,19 @@
+.venv/
+.baseline/
+.work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+dist/
+*.egg-info/
+
+# Local credentials, authorization and story runtime state
+.local/
+.env
+.env.*
+!.env.example
+.metasocli-py/
+.metasocli-py-runtime/
